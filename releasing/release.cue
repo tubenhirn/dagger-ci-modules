@@ -9,9 +9,10 @@ import (
 #Release: {
 	authToken:  dagger.#Secret
 	sourcecode: dagger.#FS
+	version:    *"latest" | string
 
 	_image: docker.#Pull & {
-		source: "tubenhirn/semantic-release-gitlab:v2.1.0"
+		source: "tubenhirn/semantic-release-gitlab:\(version)"
 	}
 
 	docker.#Run & {
