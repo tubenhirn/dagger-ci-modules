@@ -7,7 +7,7 @@ import (
 )
 
 dagger.#Plan & {
-	client: filesystem: ".": read: contents:       dagger.#FS
+	client: filesystem: ".": read: contents: dagger.#FS
 
 	client: env: {
 		GITLAB_TOKEN: dagger.#Secret
@@ -15,7 +15,7 @@ dagger.#Plan & {
 	}
 
 	actions: {
-		_source:  client.filesystem["."].read.contents
+		_source: client.filesystem["."].read.contents
 
 		release: {
 			semanticRelease: releasing.#Release & {
