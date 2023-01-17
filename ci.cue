@@ -10,7 +10,6 @@ dagger.#Plan & {
 	client: filesystem: ".": read: contents: dagger.#FS
 
 	client: env: {
-		GITLAB_TOKEN: dagger.#Secret
 		GITHUB_TOKEN: dagger.#Secret
 	}
 
@@ -20,8 +19,9 @@ dagger.#Plan & {
 		release: {
 			semanticRelease: releasing.#Release & {
 				sourcecode: _source
-				authToken:  client.env.GITLAB_TOKEN
-				version:    "v2.5.0"
+				platform:   "github"
+				authToken:  client.env.GITHUB_TOKEN
+				version:    "v2.8.0"
 			}
 		}
 	}
