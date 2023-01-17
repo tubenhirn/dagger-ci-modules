@@ -30,6 +30,9 @@ import (
 			if platform == "github" {
 				GITHUB_TOKEN: authToken
 			}
+			if platform == "git" {
+				GITHUB_TOKEN: authToken
+			}
 		}
 	}
 }
