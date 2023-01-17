@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.3.0...v1.4.0) (2023-01-17)
+
+
+### Features
+
+* add plain git release ([274ddef](https://github.com/tubenhirn/dagger-ci-modules/commit/274ddef11dc88fd8f1dadf2d32238dc17a85513e))
+
 # [1.3.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.2.0...v1.3.0) (2023-01-17)
 
 
