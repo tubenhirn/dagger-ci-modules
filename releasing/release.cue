@@ -8,11 +8,12 @@ import (
 // create a release using semenatic-release
 #Release: {
 	authToken:  dagger.#Secret
+	platform:   *"gitlab" | string
 	sourcecode: dagger.#FS
 	version:    *"latest" | string
 
 	_image: docker.#Pull & {
-		source: "tubenhirn/semantic-release-gitlab:\(version)"
+		source: "tubenhirn/semantic-release-\(platform):\(version)"
 	}
 
 	docker.#Run & {
@@ -23,7 +24,12 @@ import (
 		}
 		workdir: "/src"
 		env: {
-			GITLAB_TOKEN: authToken
+			if platform == "gitlab" {
+				GITLAB_TOKEN: authToken
+			}
+			if platform == "github" {
+				GITHUB_TOKEN: authToken
+			}
 		}
 	}
 }
