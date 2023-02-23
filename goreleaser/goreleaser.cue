@@ -49,7 +49,7 @@ import (
 				}
 
 				if removeDist {
-					"--rm-dist": true
+					"--clean": true
 				}
 			}
 		}
