@@ -19,7 +19,7 @@ dagger.#Plan & {
 		release: {
 			semanticRelease: releasing.#Release & {
 				sourcecode: _source
-				platform:   "git"
+				platform:   "github"
 				authToken:  client.env.GITHUB_TOKEN
 				version:    "v2.9.0"
 			}
