@@ -1,0 +1,79 @@
+package goreleaser
+
+import (
+	"context"
+	"os"
+
+	"dagger.io/dagger"
+)
+
+type GoReleaserOpts struct {
+	Source     string
+	DryRun     bool `default:"false"`
+	Snapshot   bool `default:"false"`
+	RemoveDist bool `default:"false"`
+	Env        map[string]string
+	Secret     []string
+}
+
+var releaserVersion = "latest"
+
+func Release(ctx context.Context, opts GoReleaserOpts) error {
+	client, err := dagger.Connect(ctx, dagger.WithLogOutput(os.Stdout), dagger.WithWorkdir("."))
+	if err != nil {
+		return err
+	}
+	defer client.Close()
+
+	commands := createFlags(opts)
+	sourceDir := client.Host().Directory(opts.Source)
+
+	goreleaser := client.Container().From("index.docker.io/goreleaser/goreleaser:" + releaserVersion)
+	goreleaser = goreleaser.WithMountedDirectory("/src", sourceDir)
+	goreleaser = goreleaser.WithWorkdir("/src")
+
+	// write env secrets
+	for _, ele := range opts.Secret {
+		secret, err := client.Host().EnvVariable(ele).Secret().ID(ctx)
+		if err != nil {
+			return err
+		}
+		goreleaser = goreleaser.WithSecretVariable(ele, client.Secret(secret))
+	}
+
+	// write env variables
+	for key, val := range opts.Env {
+		goreleaser = goreleaser.WithEnvVariable(key, val)
+	}
+
+	// set entrypoint
+	goreleaser = goreleaser.WithEntrypoint([]string{"goreleaser"})
+
+	// run the container
+	goreleaser = goreleaser.WithExec(commands)
+
+	// export the build artifacts to the host
+	_, err =  goreleaser.Directory("/src/dist").Export(ctx, opts.Source + "/dist")
+	if err != nil{
+		return err
+	}
+
+	return nil
+}
+
+func createFlags(opts GoReleaserOpts) []string {
+	var flags []string
+	// flags = append(flags, "release")
+	if opts.DryRun {
+		flags = append(flags, "--skip-publish")
+		flags = append(flags, "--skip-announce")
+	}
+	if opts.Snapshot {
+		flags = append(flags, "--snapshot")
+	}
+	if opts.RemoveDist {
+		flags = append(flags, "--clean")
+	}
+
+	return flags
+}
