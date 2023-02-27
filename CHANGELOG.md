@@ -1,3 +1,15 @@
+# [1.5.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.4.1...v1.5.0) (2023-02-27)
+
+
+### Continuous Integration
+
+* do a full release for this repo ([838e5c6](https://github.com/tubenhirn/dagger-ci-modules/commit/838e5c609aadfa1286a74ca2a988134079d3af78))
+
+
+### Features
+
+* rework goreleaser with dagger go sdk ([dd27063](https://github.com/tubenhirn/dagger-ci-modules/commit/dd270633f468117986bbf97919e5c2f78f1159c6))
+
 ## [1.4.1](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.4.0...v1.4.1) (2023-02-23)
 
 
