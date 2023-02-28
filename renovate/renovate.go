@@ -3,7 +3,6 @@ package renovate
 import (
 	"context"
 	"fmt"
-	"os"
 	"strconv"
 	"time"
 
@@ -16,7 +15,7 @@ type RenovateOpts struct {
 	AutodiscoverFilter string
 	Repositories       string
 	Env                map[string]string
-	Secret             []string
+	Secret             map[string]dagger.SecretID
 	LogLevel           string
 }
 
@@ -31,27 +30,16 @@ var renovateImage = image{
 	Version: "34.153.1",
 }
 
-func Renovate(ctx context.Context, opts RenovateOpts) error {
+func Renovate(ctx context.Context, client dagger.Client, opts RenovateOpts) error {
 	// used to avoid dagger caching
 	// we want this function to be executed every time we run it
 	cacheHack := time.Now()
-	// initialize Dagger client
-	client, err := dagger.Connect(ctx, dagger.WithLogOutput(os.Stdout))
-	if err != nil {
-		return err
-	}
-
-	defer client.Close()
 
 	renovate := client.Container().From(createImageString(renovateImage))
 
 	// write env secrets - access-tokens etc.
-	for _, ele := range opts.Secret {
-		secret, err := client.Host().EnvVariable(ele).Secret().ID(ctx)
-		if err != nil {
-			return err
-		}
-		renovate = renovate.WithSecretVariable(ele, client.Secret(secret))
+	for key, val := range opts.Secret {
+		renovate = renovate.WithSecretVariable(key, val)
 	}
 
 	// write dditional env variables
