@@ -49,7 +49,7 @@ func Renovate(ctx context.Context, client dagger.Client, opts RenovateOpts) erro
 
 	renovate = renovate.WithEnvVariable("RENOVATE_PLATFORM", opts.Platform)
 	renovate = renovate.WithEnvVariable("RENOVATE_EXTENDS", "github>whitesource/merge-confidence:beta")
-	renovate = renovate.WithEnvVariable("RENOVATE_REQUIRE_CONFIG", "true")
+	renovate = renovate.WithEnvVariable("RENOVATE_REQUIRE_CONFIG", "required")
 	renovate = renovate.WithEnvVariable("RENOVATE_GIT_AUTHOR", "Renovate Bot <bot@renovateapp.com>")
 	renovate = renovate.WithEnvVariable("RENOVATE_PIN_DIGEST", "true")
 	renovate = renovate.WithEnvVariable("RENOVATE_DEPENDENCY_DASHBOARD", "false")
