@@ -5,7 +5,7 @@
 
 ### goreleaser
 
-a module containing goreleaser.
+a module providing goreleaser. https://github.com/goreleaser/goreleaser
 
 ``` go
 import "github.com/tubenhirn/dagger-ci-modules/v2/goreleaser"
@@ -26,7 +26,7 @@ goreleaser.Release(context.Background(), options)
 
 ### renovate
 
-a module providing renovate.
+a module providing renovate. https://github.com/renovatebot/renovate
 
 ``` go
 import "github.com/tubenhirn/dagger-ci-modules/v2/renovate"
