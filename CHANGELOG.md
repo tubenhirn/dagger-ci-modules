@@ -1,3 +1,20 @@
+# [1.7.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.6.0...v1.7.0) (2023-02-28)
+
+
+### Bug Fixes
+
+* bugfix for secrets ([bbcc528](https://github.com/tubenhirn/dagger-ci-modules/commit/bbcc5289952b6cb951fdf159ec4fcc33545a16df))
+
+
+### Documentation
+
+* fix docs ([ad289e1](https://github.com/tubenhirn/dagger-ci-modules/commit/ad289e1a78856f83a86631f79a5c270d164ab1f3))
+
+
+### Features
+
+* add client parameter to pass secrets through ([7079c04](https://github.com/tubenhirn/dagger-ci-modules/commit/7079c042637d6f125701171b506e90e93474b1aa))
+
 # [1.6.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.5.0...v1.6.0) (2023-02-28)
 
 
