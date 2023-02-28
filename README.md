@@ -34,6 +34,9 @@ import (
     "github.com/tubenhirn/dagger-ci-modules/v2/renovate"
 )
 
+// a context
+ctx := context.Background()
+
 // initialize Dagger client
 client, err := dagger.Connect(ctx, dagger.WithLogOutput(os.Stdout))
 if err != nil {
@@ -60,7 +63,7 @@ options := renovate.RenovateOpts{
     LogLevel: "debug",
 }
 
-renovate.Renovate(context.Background(), client, options)
+renovate.Renovate(ctx, client, options)
 ```
 
 ### golangci
