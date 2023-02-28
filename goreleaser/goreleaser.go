@@ -2,6 +2,7 @@ package goreleaser
 
 import (
 	"context"
+	"fmt"
 	"os"
 
 	"dagger.io/dagger"
@@ -16,7 +17,16 @@ type GoReleaserOpts struct {
 	Secret     []string
 }
 
-var releaserVersion = "latest"
+type image struct {
+	Name    string
+	Version string
+}
+
+var goreleaserImage = image{
+	Name: "goreleaser/goreleaser",
+	//# renovate: datasource=docker depName=goreleaser/goreleaser versioning=docker
+	Version: "v1.15.2",
+}
 
 func Release(ctx context.Context, opts GoReleaserOpts) error {
 	client, err := dagger.Connect(ctx, dagger.WithLogOutput(os.Stdout), dagger.WithWorkdir("."))
@@ -28,7 +38,7 @@ func Release(ctx context.Context, opts GoReleaserOpts) error {
 	commands := createFlags(opts)
 	sourceDir := client.Host().Directory(opts.Source)
 
-	goreleaser := client.Container().From("index.docker.io/goreleaser/goreleaser:" + releaserVersion)
+	goreleaser := client.Container().From(createImageString(goreleaserImage))
 	goreleaser = goreleaser.WithMountedDirectory("/src", sourceDir)
 	goreleaser = goreleaser.WithWorkdir("/src")
 
@@ -76,4 +86,8 @@ func createFlags(opts GoReleaserOpts) []string {
 	}
 
 	return flags
+}
+
+func createImageString(img image) string {
+	return fmt.Sprintf("%s:%s", img.Name, img.Version)
 }
