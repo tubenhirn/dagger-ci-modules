@@ -39,7 +39,7 @@ func Renovate(ctx context.Context, client dagger.Client, opts RenovateOpts) erro
 
 	// write env secrets - access-tokens etc.
 	for key, val := range opts.Secret {
-		renovate = renovate.WithSecretVariable(key, val)
+		renovate = renovate.WithSecretVariable(key, client.Secret(val))
 	}
 
 	// write dditional env variables
@@ -62,7 +62,7 @@ func Renovate(ctx context.Context, client dagger.Client, opts RenovateOpts) erro
 	// we want this container to be executed every time we run it
 	renovate = renovate.WithEnvVariable("CACHE_HACK", cacheHack.String())
 
-	_, err = renovate.Exec().Stdout(ctx)
+	_, err := renovate.Exec().Stdout(ctx)
 	if err != nil {
 		panic(err)
 	}
