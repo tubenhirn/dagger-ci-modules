@@ -37,7 +37,7 @@ options := renovate.RenovateOpts{
     AutodiscoverFilter: "",
     Repositories: "tubenhirn/dagger-ci-modules",
     Env: map[string]string{},
-    Secret: [string]{
+    Secret: []string{
         "RENOVATE_TOKEN", "GITHUB_TOKEN"
     },
     LogLevel: "debug",
