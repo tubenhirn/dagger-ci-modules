@@ -1,3 +1,16 @@
+# [1.8.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.7.0...v1.8.0) (2023-02-28)
+
+
+### Documentation
+
+* extend renovate docs ([aa24cde](https://github.com/tubenhirn/dagger-ci-modules/commit/aa24cde33ad63ecf19e0ab58ee91a1e4f174af2c))
+* update renovate docs ([9257fc2](https://github.com/tubenhirn/dagger-ci-modules/commit/9257fc2bc52f2cbcd14782aef0ec7a4fa8ece654))
+
+
+### Features
+
+* **deps:** update renovate/renovate docker tag to v34.154.0 ([4ff4bf7](https://github.com/tubenhirn/dagger-ci-modules/commit/4ff4bf74fe0025c213dd37581c519b30a11624ea))
+
 # [1.7.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.6.0...v1.7.0) (2023-02-28)
 
 
