@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.8.0...v1.8.1) (2023-02-28)
+
+
+### Bug Fixes
+
+* fix require config warnings ([1c32baa](https://github.com/tubenhirn/dagger-ci-modules/commit/1c32baafcad859be31a67419da7ca8fff5616a5c))
+
 # [1.8.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.7.0...v1.8.0) (2023-02-28)
 
 
