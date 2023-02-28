@@ -1,3 +1,26 @@
+# [1.6.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.5.0...v1.6.0) (2023-02-28)
+
+
+### Code Refactoring
+
+* formatting ([af2f422](https://github.com/tubenhirn/dagger-ci-modules/commit/af2f42237780da1824dd35ee1a6a66e776d649c7))
+
+
+### Continuous Integration
+
+* add renovate config for goreleaser ([f2f2443](https://github.com/tubenhirn/dagger-ci-modules/commit/f2f2443232fa6bcdb63a1a3a1e04bf129fd6b6fb))
+
+
+### Documentation
+
+* add goreleaser description for go sdk ([7a5c51b](https://github.com/tubenhirn/dagger-ci-modules/commit/7a5c51bbcad5bf87f1aefb7f615a7a35fe06dfbe))
+* update README.md ([f2b408f](https://github.com/tubenhirn/dagger-ci-modules/commit/f2b408f2c971821b7388389753b1e884058ce6f5))
+
+
+### Features
+
+* rework renovate with go sdk ([1c4a687](https://github.com/tubenhirn/dagger-ci-modules/commit/1c4a687dcf24050c76a62ddf9360e49ca35733ab))
+
 # [1.5.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.4.1...v1.5.0) (2023-02-27)
 
 
