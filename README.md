@@ -29,7 +29,23 @@ goreleaser.Release(context.Background(), options)
 a module providing renovate. https://github.com/renovatebot/renovate
 
 ``` go
-import "github.com/tubenhirn/dagger-ci-modules/v2/renovate"
+import (
+    "dagger.io/dagger"
+    "github.com/tubenhirn/dagger-ci-modules/v2/renovate"
+)
+
+// initialize Dagger client
+client, err := dagger.Connect(ctx, dagger.WithLogOutput(os.Stdout))
+if err != nil {
+    panic(err)
+}
+
+defer client.Close()
+
+renovateTokenId, err = client.Host().EnvVariable("GITHUB_ACCESS_TOKEN").Secret().ID(ctx)
+if err != nil {
+    panic(err)
+}
 
 options := renovate.RenovateOpts{
     Platform: "github",
@@ -37,13 +53,14 @@ options := renovate.RenovateOpts{
     AutodiscoverFilter: "",
     Repositories: "tubenhirn/dagger-ci-modules",
     Env: map[string]string{},
-    Secret: []string{
-        "RENOVATE_TOKEN", "GITHUB_TOKEN"
+    Secret: map[string]dagger.SecretID{
+        "RENOVATE_TOKEN": renovateTokenId,
+        "GITHUB_COM_TOKEN":   renovateTokenId,
     },
     LogLevel: "debug",
 }
 
-renovate.Renovate(context.Background(), options)
+renovate.Renovate(context.Background(), client, options)
 ```
 
 ### golangci
