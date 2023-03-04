@@ -33,7 +33,7 @@ var renovateImage = image{
 func Renovate(ctx context.Context, client dagger.Client, opts RenovateOpts) error {
 	// used to avoid dagger caching
 	// we want this function to be executed every time we run it
-	cacheHack := time.Now()
+	// cacheHack := time.Now()
 
 	renovate := client.Container().From(createImageString(renovateImage))
 
@@ -60,7 +60,7 @@ func Renovate(ctx context.Context, client dagger.Client, opts RenovateOpts) erro
 	renovate = renovate.WithEnvVariable("LOG_LEVEL", opts.LogLevel)
 	// pass this value to avoid dagger caching
 	// we want this container to be executed every time we run it
-	renovate = renovate.WithEnvVariable("CACHE_HACK", cacheHack.String())
+	// renovate = renovate.WithEnvVariable("CACHE_HACK", cacheHack.String())
 
 	_, err := renovate.Exec().Stdout(ctx)
 	if err != nil {
