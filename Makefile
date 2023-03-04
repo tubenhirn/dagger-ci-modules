@@ -21,7 +21,7 @@
 # //******//********  *****   ***** //******/***         //***** /**       *** /** /**//****** //******//****** ***//****** ******
 #  //////  ////////  /////   /////   ////// ///           /////  //       ///  //  //  //////   //////  ////// ///  ////// //////
 
-release: ## tag and release
+semanticrelease: ## tag and release
 	@echo "tag and release..."
 	go run .dagger/ci.go --platform=github
 

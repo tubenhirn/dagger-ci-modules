@@ -1,13 +1,12 @@
 # dagger-ci-modules
 
-
 ## modules
 
 ### goreleaser
 
 a module providing goreleaser. https://github.com/goreleaser/goreleaser
 
-``` go
+```go
 import "github.com/tubenhirn/dagger-ci-modules/v2/goreleaser"
 
 options := goreleaser.GoReleaserOpts{
@@ -24,11 +23,52 @@ goreleaser.Release(context.Background(), options)
 
 ### semantic-release
 
+a module providing semantic-release. https://github.com/semantic-release/github
+
+```go
+import (
+    "dagger.io/dagger"
+    "github.com/tubenhirn/dagger-ci-modules/v2/semanticrelease"
+)
+
+// a context
+ctx := context.Background()
+
+// initialize Dagger client
+client, err := dagger.Connect(ctx, dagger.WithLogOutput(os.Stdout))
+if err != nil {
+    panic(err)
+}
+
+defer client.Close()
+
+
+var secrets = make(map[string]dagger.SecretID)
+githubTokenId, err = client.Host().EnvVariable("GITHUB_ACCESS_TOKEN").Secret().ID(ctx)
+if err != nil {
+    panic(err)
+}
+secrets["GITHUB_TOKEN"] = githubTokenId
+
+dir, _ := os.Getwd()
+
+options := semanticrelease.SemanticOpts{
+    Source:   dir,
+    Platform: "github",
+    Env:      map[string]string{},
+    Secret:   secrets,
+}
+
+if err := semanticrelease.Semanticrelease(context.Background(), *client, options); err != nil {
+    fmt.Println(err)
+}
+```
+
 ### renovate
 
 a module providing renovate. https://github.com/renovatebot/renovate
 
-``` go
+```go
 import (
     "dagger.io/dagger"
     "github.com/tubenhirn/dagger-ci-modules/v2/renovate"
@@ -70,6 +110,6 @@ renovate.Renovate(ctx, client, options)
 
 ## release
 
-``` shell
+```shell
 dagger-cue do release
 ```
