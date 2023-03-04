@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.8.2...v1.9.0) (2023-03-04)
+
+
+### Features
+
+* rework semantic-release with go-sdk ([61a0efa](https://github.com/tubenhirn/dagger-ci-modules/commit/61a0efa2890ffcc8b6771f95241fdf02ed6c2c30))
+
 ## [1.8.2](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.8.1...v1.8.2) (2023-03-04)
 
 
