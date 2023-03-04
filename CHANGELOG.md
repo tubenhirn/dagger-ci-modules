@@ -1,3 +1,10 @@
+## [1.8.2](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.8.1...v1.8.2) (2023-03-04)
+
+
+### Code Refactoring
+
+* add client to goreleaser ([232f1f3](https://github.com/tubenhirn/dagger-ci-modules/commit/232f1f315bab06eb5035b32a651ddc504a51fce9))
+
 ## [1.8.1](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.8.0...v1.8.1) (2023-02-28)
 
 
