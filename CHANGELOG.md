@@ -1,3 +1,10 @@
+## [1.10.1](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.10.0...v1.10.1) (2023-03-06)
+
+
+### Bug Fixes
+
+* fix image cache layer ([8073516](https://github.com/tubenhirn/dagger-ci-modules/commit/80735169cd3bf657487afb0a81a4a744fdd3f990))
+
 # [1.10.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.9.0...v1.10.0) (2023-03-06)
 
 
