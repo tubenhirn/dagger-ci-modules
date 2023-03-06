@@ -1,3 +1,28 @@
+# [1.10.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.9.0...v1.10.0) (2023-03-06)
+
+
+### Bug Fixes
+
+* pin renovate version to minor only ([ebd32d7](https://github.com/tubenhirn/dagger-ci-modules/commit/ebd32d7535f1bb19f01850ac2bb76e7991a6af10))
+* remove cache hack ([2956bae](https://github.com/tubenhirn/dagger-ci-modules/commit/2956baee2d88e6859b208506e3f9f830e0e82359))
+* remove time dep ([aaf0d6e](https://github.com/tubenhirn/dagger-ci-modules/commit/aaf0d6ea57d88c49bf9f20fcc011ffd7aab74cac))
+
+
+### Continuous Integration
+
+* add makefile for dagger execution ([7c09a58](https://github.com/tubenhirn/dagger-ci-modules/commit/7c09a58f2f502951e027776502fdaf6b29d5c39f))
+* rename release job ([b6d2771](https://github.com/tubenhirn/dagger-ci-modules/commit/b6d27718a10004bfe15ad5d432e4343f275331f6))
+
+
+### Documentation
+
+* update README.md ([99f400a](https://github.com/tubenhirn/dagger-ci-modules/commit/99f400acc6ee3ca7cd0883f1e3bf44e0c4737a23))
+
+
+### Features
+
+* **deps:** update renovate/renovate docker tag to v34.157.0 ([190156b](https://github.com/tubenhirn/dagger-ci-modules/commit/190156b18d81acfaded615a73a7ded8cf31298d6))
+
 # [1.9.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.8.2...v1.9.0) (2023-03-04)
 
 
