@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"strconv"
+	"time"
 
 	"dagger.io/dagger"
 )
@@ -30,23 +31,13 @@ var renovateImage = image{
 }
 
 func Renovate(ctx context.Context, client dagger.Client, opts RenovateOpts) error {
+	image := client.Container().From(createImageString(renovateImage))
+
 	// used to avoid dagger caching
 	// we want this function to be executed every time we run it
-	// cacheHack := time.Now()
+	cacheHack := time.Now()
 
-	renovate := client.Container().From(createImageString(renovateImage))
-
-	// write env secrets - access-tokens etc.
-	for key, val := range opts.Secret {
-		renovate = renovate.WithSecretVariable(key, client.Secret(val))
-	}
-
-	// write dditional env variables
-	for key, val := range opts.Env {
-		renovate = renovate.WithEnvVariable(key, val)
-	}
-
-	renovate = renovate.WithEnvVariable("RENOVATE_PLATFORM", opts.Platform)
+	renovate := image.WithEnvVariable("RENOVATE_PLATFORM", opts.Platform)
 	renovate = renovate.WithEnvVariable("RENOVATE_EXTENDS", "github>whitesource/merge-confidence:beta")
 	renovate = renovate.WithEnvVariable("RENOVATE_REQUIRE_CONFIG", "required")
 	renovate = renovate.WithEnvVariable("RENOVATE_GIT_AUTHOR", "Renovate Bot <bot@renovateapp.com>")
@@ -59,7 +50,17 @@ func Renovate(ctx context.Context, client dagger.Client, opts RenovateOpts) erro
 	renovate = renovate.WithEnvVariable("LOG_LEVEL", opts.LogLevel)
 	// pass this value to avoid dagger caching
 	// we want this container to be executed every time we run it
-	// renovate = renovate.WithEnvVariable("CACHE_HACK", cacheHack.String())
+	renovate = renovate.WithEnvVariable("CACHE_HACK", cacheHack.String())
+
+	// write env secrets - access-tokens etc.
+	for key, val := range opts.Secret {
+		renovate = renovate.WithSecretVariable(key, client.Secret(val))
+	}
+
+	// write dditional env variables
+	for key, val := range opts.Env {
+		renovate = renovate.WithEnvVariable(key, val)
+	}
 
 	_, err := renovate.Exec().Stdout(ctx)
 	if err != nil {
