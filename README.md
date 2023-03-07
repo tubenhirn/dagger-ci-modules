@@ -7,7 +7,23 @@
 a module providing goreleaser. https://github.com/goreleaser/goreleaser
 
 ```go
-import "github.com/tubenhirn/dagger-ci-modules/v2/goreleaser"
+import (
+    "dagger.io/dagger"
+    "github.com/tubenhirn/dagger-ci-modules/v2/goreleaser"
+)
+
+// a context
+ctx := context.Background()
+
+// initialize Dagger client
+client, err := dagger.Connect(ctx, dagger.WithLogOutput(os.Stdout))
+if err != nil {
+    panic(err)
+}
+
+defer client.Close()
+
+dir, _ := os.Getwd()
 
 options := goreleaser.GoReleaserOpts{
     Source:     dir,
@@ -18,7 +34,7 @@ options := goreleaser.GoReleaserOpts{
     },
 }
 
-goreleaser.Release(context.Background(), options)
+goreleaser.Release(ctx, *client, options)
 ```
 
 ### semantic-release
@@ -41,7 +57,6 @@ if err != nil {
 }
 
 defer client.Close()
-
 
 var secrets = make(map[string]dagger.SecretID)
 githubTokenId, err = client.Host().EnvVariable("GITHUB_ACCESS_TOKEN").Secret().ID(ctx)
