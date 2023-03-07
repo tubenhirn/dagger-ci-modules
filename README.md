@@ -121,10 +121,10 @@ options := renovate.RenovateOpts{
 renovate.Renovate(ctx, client, options)
 ```
 
-### golangci
+## create a new release
 
-## release
+use the included `Makefile` to run the release job.
 
 ```shell
-dagger-cue do release
+make release
 ```
