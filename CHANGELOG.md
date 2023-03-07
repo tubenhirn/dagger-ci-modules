@@ -1,3 +1,17 @@
+# [1.11.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.10.1...v1.11.0) (2023-03-07)
+
+
+### Documentation
+
+* fix context parameter in README.md ([08bbaa2](https://github.com/tubenhirn/dagger-ci-modules/commit/08bbaa2cf932e8b6fe270e679d34377e6cd25705))
+* updare goreleaser docs ([82ffed8](https://github.com/tubenhirn/dagger-ci-modules/commit/82ffed8b26ebbb1c7cc9b306c2820004242bb949))
+* update release info ([aee9a09](https://github.com/tubenhirn/dagger-ci-modules/commit/aee9a097bb99faaf6d58b661d733999689098503))
+
+
+### Features
+
+* **deps:** update goreleaser/goreleaser docker tag to v1.16.0 ([37c099f](https://github.com/tubenhirn/dagger-ci-modules/commit/37c099f12a272b56e4da33f0f6ca49b1be3a7971))
+
 ## [1.10.1](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.10.0...v1.10.1) (2023-03-06)
 
 
