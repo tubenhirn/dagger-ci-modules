@@ -59,7 +59,7 @@ options := semanticrelease.SemanticOpts{
     Secret:   secrets,
 }
 
-if err := semanticrelease.Semanticrelease(context.Background(), *client, options); err != nil {
+if err := semanticrelease.Semanticrelease(ctx, *client, options); err != nil {
     fmt.Println(err)
 }
 ```
