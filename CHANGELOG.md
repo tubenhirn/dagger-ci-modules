@@ -1,3 +1,10 @@
+## [1.12.1](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.12.0...v1.12.1) (2023-03-11)
+
+
+### Bug Fixes
+
+* remove v2 versioning ([2b3c330](https://github.com/tubenhirn/dagger-ci-modules/commit/2b3c330811d10a7398e7fb214663328131a6a5a3))
+
 # [1.12.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.11.0...v1.12.0) (2023-03-11)
 
 
