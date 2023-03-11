@@ -23,7 +23,7 @@ type image struct {
 var semanticreleaseGithubImage = image{
 	Name: "tubenhirn/semantic-release-github",
 	//# renovate: datasource=docker depName=tubenhirn/semantic-release-github versioning=docker
-	Version: "v3.0.0",
+	Version: "v3.0.1",
 }
 
 var semanticreleaseGitlabImage = image{
