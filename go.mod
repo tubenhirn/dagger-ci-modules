@@ -1,4 +1,4 @@
-module github.com/tubenhirn/dagger-ci-modules/v2
+module github.com/tubenhirn/dagger-ci-modules
 
 go 1.20
 
