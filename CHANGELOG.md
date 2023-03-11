@@ -1,3 +1,15 @@
+# [1.12.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.11.0...v1.12.0) (2023-03-11)
+
+
+### Bug Fixes
+
+* **deps:** update goreleaser/goreleaser docker tag to v1.16.1 ([cf58264](https://github.com/tubenhirn/dagger-ci-modules/commit/cf58264b47705a8264ce01fbdc5537b94730a792))
+
+
+### Features
+
+* **deps:** update renovate/renovate docker tag to v34.160 ([ce25870](https://github.com/tubenhirn/dagger-ci-modules/commit/ce258704c56939209e9fbe1aed6d372dec4f50d5))
+
 # [1.11.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.10.1...v1.11.0) (2023-03-07)
 
 
