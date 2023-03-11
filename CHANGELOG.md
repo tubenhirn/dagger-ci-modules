@@ -1,3 +1,10 @@
+## [1.12.2](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.12.1...v1.12.2) (2023-03-11)
+
+
+### Bug Fixes
+
+* fix dagger-ci-modules import path ([2f60132](https://github.com/tubenhirn/dagger-ci-modules/commit/2f6013249c9ee3b55258c49decb42f4374aeab74))
+
 ## [1.12.1](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.12.0...v1.12.1) (2023-03-11)
 
 
