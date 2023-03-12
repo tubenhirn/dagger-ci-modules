@@ -118,7 +118,7 @@ options := cimodules.RenovateOpts{
     LogLevel: "debug",
 }
 
-cimodules.Renovate(ctx, client, options)
+cimodules.Renovate(ctx, *client, options)
 ```
 
 ## create a new release
