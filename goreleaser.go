@@ -1,4 +1,4 @@
-package goreleaser
+package cimodules
 
 import (
 	"context"
@@ -16,10 +16,10 @@ type GoReleaserOpts struct {
 	Secret     map[string]dagger.SecretID
 }
 
-type image struct {
-	Name    string
-	Version string
-}
+// type image struct {
+// 	Name    string
+// 	Version string
+// }
 
 var goreleaserImage = image{
 	Name: "goreleaser/goreleaser",
@@ -27,7 +27,7 @@ var goreleaserImage = image{
 	Version: "v1.16.1",
 }
 
-func Release(ctx context.Context, client dagger.Client, opts GoReleaserOpts) error {
+func release(ctx context.Context, client dagger.Client, opts GoReleaserOpts) error {
 
 	commands := createFlags(opts)
 	sourceDir := client.Host().Directory(opts.Source)

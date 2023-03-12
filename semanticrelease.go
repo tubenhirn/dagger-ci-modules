@@ -1,4 +1,4 @@
-package semanticrelease
+package cimodules
 
 import (
 	"context"
@@ -15,10 +15,10 @@ type SemanticOpts struct {
 	Secret   map[string]dagger.SecretID
 }
 
-type image struct {
-	Name    string
-	Version string
-}
+// type image struct {
+// 	Name    string
+// 	Version string
+// }
 
 var semanticreleaseGithubImage = image{
 	Name: "tubenhirn/semantic-release-github",
@@ -38,7 +38,7 @@ var semanticreleaseGitImage = image{
 	Version: "v4.0.0",
 }
 
-func Semanticrelease(ctx context.Context, client dagger.Client, opts SemanticOpts) error {
+func semanticrelease(ctx context.Context, client dagger.Client, opts SemanticOpts) error {
 
 	sourceDir := client.Host().Directory(opts.Source)
 

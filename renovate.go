@@ -1,4 +1,4 @@
-package renovate
+package cimodules
 
 import (
 	"context"
@@ -30,7 +30,7 @@ var renovateImage = image{
 	Version: "35.1",
 }
 
-func Renovate(ctx context.Context, client dagger.Client, opts RenovateOpts) error {
+func renovate(ctx context.Context, client dagger.Client, opts RenovateOpts) error {
 	image := client.Container().From(createImageString(renovateImage))
 
 	// used to avoid dagger caching

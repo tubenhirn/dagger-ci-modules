@@ -8,7 +8,7 @@ import (
 	"os"
 
 	"dagger.io/dagger"
-	"github.com/tubenhirn/dagger-ci-modules/semanticrelease"
+	"github.com/tubenhirn/dagger-ci-modules"
 )
 
 func main() {
@@ -54,14 +54,14 @@ func main() {
 
 	dir, _ := os.Getwd()
 
-	options := semanticrelease.SemanticOpts{
+	options := cimodules.SemanticOpts{
 		Source:   dir,
 		Platform: *platform,
 		Env:      map[string]string{},
 		Secret:   secrets,
 	}
 
-	if err := semanticrelease.Semanticrelease(context.Background(), *client, options); err != nil {
+	if err := cimodules.Semanticrelease(ctx, *client, options); err != nil {
 		fmt.Println(err)
 	}
 }
