@@ -1,3 +1,10 @@
+## [4.0.1](https://github.com/tubenhirn/dagger-ci-modules/compare/v4.0.0...v4.0.1) (2023-03-12)
+
+
+### Bug Fixes
+
+* add v4 import path ([cdffbd4](https://github.com/tubenhirn/dagger-ci-modules/commit/cdffbd40b2cb93e70b99c81a063cfbee2508acb0))
+
 # [4.0.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v3.0.0...v4.0.0) (2023-03-12)
 
 
