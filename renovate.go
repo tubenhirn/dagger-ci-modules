@@ -2,7 +2,6 @@ package cimodules
 
 import (
 	"context"
-	"fmt"
 	"strconv"
 	"time"
 
@@ -68,8 +67,4 @@ func renovate(ctx context.Context, client dagger.Client, opts RenovateOpts) erro
 	}
 
 	return nil
-}
-
-func createImageString(img image) string {
-	return fmt.Sprintf("%s:%s", img.Name, img.Version)
 }

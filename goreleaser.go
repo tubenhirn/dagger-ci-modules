@@ -2,7 +2,6 @@ package cimodules
 
 import (
 	"context"
-	"fmt"
 
 	"dagger.io/dagger"
 )
@@ -15,11 +14,6 @@ type GoReleaserOpts struct {
 	Env        map[string]string
 	Secret     map[string]dagger.SecretID
 }
-
-// type image struct {
-// 	Name    string
-// 	Version string
-// }
 
 var goreleaserImage = image{
 	Name: "goreleaser/goreleaser",
@@ -75,8 +69,4 @@ func createFlags(opts GoReleaserOpts) []string {
 	}
 
 	return flags
-}
-
-func createImageString(img image) string {
-	return fmt.Sprintf("%s:%s", img.Name, img.Version)
 }

@@ -3,7 +3,6 @@ package cimodules
 import (
 	"context"
 	"errors"
-	"fmt"
 
 	"dagger.io/dagger"
 )
@@ -75,8 +74,4 @@ func semanticrelease(ctx context.Context, client dagger.Client, opts SemanticOpt
 	}
 
 	return nil
-}
-
-func createImageString(img image) string {
-	return fmt.Sprintf("%s:%s", img.Name, img.Version)
 }
