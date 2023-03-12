@@ -1,3 +1,23 @@
+# [3.0.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v2.0.0...v3.0.0) (2023-03-12)
+
+
+### Continuous Integration
+
+* add renove config presets ([c4f098a](https://github.com/tubenhirn/dagger-ci-modules/commit/c4f098ad0dc8b710f88962282cc5e258c04a7c4c))
+
+
+### Features
+
+* **deps:** update renovate/renovate docker tag to v35.1 ([a767d0b](https://github.com/tubenhirn/dagger-ci-modules/commit/a767d0b4325b1aa105bf7af93840eb1b955305b5))
+* **deps:** update tubenhirn/semantic-release-github docker tag to v4 ([11efc31](https://github.com/tubenhirn/dagger-ci-modules/commit/11efc31c23ac4f12dde6948fb2c903b85a554d58))
+* **deps:** update tubenhirn/semantic-release-gitlab docker tag to v4 ([3d03ccc](https://github.com/tubenhirn/dagger-ci-modules/commit/3d03ccc00df94a774a2f8f92151dec64528b0ef3))
+
+
+### BREAKING CHANGE
+
+* **deps:** Major update
+* **deps:** Major update
+
 # [2.0.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v1.12.2...v2.0.0) (2023-03-11)
 
 
