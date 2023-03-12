@@ -9,7 +9,7 @@ a module providing goreleaser. https://github.com/goreleaser/goreleaser
 ```go
 import (
     "dagger.io/dagger"
-    "github.com/tubenhirn/dagger-ci-modules/goreleaser"
+    "github.com/tubenhirn/dagger-ci-modules/v4"
 )
 
 // a context
@@ -25,7 +25,7 @@ defer client.Close()
 
 dir, _ := os.Getwd()
 
-options := goreleaser.GoReleaserOpts{
+options := cimodules.GoReleaserOpts{
     Source:     dir,
     Snapshot:   true,
     RemoveDist: true,
@@ -34,7 +34,7 @@ options := goreleaser.GoReleaserOpts{
     },
 }
 
-goreleaser.Release(ctx, *client, options)
+cimodules.Release(ctx, *client, options)
 ```
 
 ### semantic-release
@@ -44,7 +44,7 @@ a module providing semantic-release. https://github.com/semantic-release/github
 ```go
 import (
     "dagger.io/dagger"
-    "github.com/tubenhirn/dagger-ci-modules/semanticrelease"
+    "github.com/tubenhirn/dagger-ci-modules/v4"
 )
 
 // a context
@@ -67,14 +67,14 @@ secrets["GITHUB_TOKEN"] = githubTokenId
 
 dir, _ := os.Getwd()
 
-options := semanticrelease.SemanticOpts{
+options := cimodules.SemanticOpts{
     Source:   dir,
     Platform: "github",
     Env:      map[string]string{},
     Secret:   secrets,
 }
 
-if err := semanticrelease.Semanticrelease(ctx, *client, options); err != nil {
+if err := cimodules.Semanticrelease(ctx, *client, options); err != nil {
     fmt.Println(err)
 }
 ```
@@ -86,7 +86,7 @@ a module providing renovate. https://github.com/renovatebot/renovate
 ```go
 import (
     "dagger.io/dagger"
-    "github.com/tubenhirn/dagger-ci-modules/renovate"
+    "github.com/tubenhirn/dagger-ci-modules/v4"
 )
 
 // a context
@@ -105,7 +105,7 @@ if err != nil {
     panic(err)
 }
 
-options := renovate.RenovateOpts{
+options := cimodules.RenovateOpts{
     Platform: "github",
     Autodiscover: false,
     AutodiscoverFilter: "",
@@ -118,7 +118,7 @@ options := renovate.RenovateOpts{
     LogLevel: "debug",
 }
 
-renovate.Renovate(ctx, client, options)
+cimodules.Renovate(ctx, client, options)
 ```
 
 ## create a new release
