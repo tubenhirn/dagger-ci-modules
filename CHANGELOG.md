@@ -1,3 +1,21 @@
+# [4.1.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v4.0.1...v4.1.0) (2023-03-12)
+
+
+### Continuous Integration
+
+* update ci with new module version ([baf9489](https://github.com/tubenhirn/dagger-ci-modules/commit/baf9489217b8c310e51ae3cda6f95f8ad6be0fcd))
+
+
+### Documentation
+
+* add client pointer in README.md ([f5d19e4](https://github.com/tubenhirn/dagger-ci-modules/commit/f5d19e4352a7d103a537eb304701cb22d7abae48))
+* update README.md module useage blocks ([a9302ba](https://github.com/tubenhirn/dagger-ci-modules/commit/a9302ba878928962ba517e02a4070d18257394cc))
+
+
+### Features
+
+* **deps:** update renovate/renovate docker tag to v35.2 ([a4ba578](https://github.com/tubenhirn/dagger-ci-modules/commit/a4ba578ca5d214a8771ae6e161587d8abb653632))
+
 ## [4.0.1](https://github.com/tubenhirn/dagger-ci-modules/compare/v4.0.0...v4.0.1) (2023-03-12)
 
 
