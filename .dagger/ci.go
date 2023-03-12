@@ -8,7 +8,7 @@ import (
 	"os"
 
 	"dagger.io/dagger"
-	"github.com/tubenhirn/dagger-ci-modules"
+	"github.com/tubenhirn/dagger-ci-modules/v4"
 )
 
 func main() {
