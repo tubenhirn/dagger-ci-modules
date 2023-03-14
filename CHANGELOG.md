@@ -1,3 +1,10 @@
+## [4.4.1](https://github.com/tubenhirn/dagger-ci-modules/compare/v4.4.0...v4.4.1) (2023-03-14)
+
+
+### Performance Improvements
+
+* cache image ([c1d50fd](https://github.com/tubenhirn/dagger-ci-modules/commit/c1d50fdd8385c0c292b4f0c6eb25bd18651ed492))
+
 # [4.4.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v4.3.0...v4.4.0) (2023-03-14)
 
 
