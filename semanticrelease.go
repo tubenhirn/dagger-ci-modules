@@ -53,7 +53,10 @@ func semanticrelease(ctx context.Context, client dagger.Client, opts SemanticOpt
 		return errors.New("Platform net set.")
 	}
 
-	semanticrelease := client.Container().From(image)
+	semanticreleaseImage := client.Container().From(image)
+
+	semanticrelease := semanticreleaseImage.WithMountedDirectory("/src", sourceDir)
+	semanticrelease = semanticrelease.WithWorkdir("/src")
 
 	// write env secrets - access-tokens etc.
 	for key, val := range opts.Secret {
@@ -64,9 +67,6 @@ func semanticrelease(ctx context.Context, client dagger.Client, opts SemanticOpt
 	for key, val := range opts.Env {
 		semanticrelease = semanticrelease.WithEnvVariable(key, val)
 	}
-
-	semanticrelease = semanticrelease.WithMountedDirectory("/src", sourceDir)
-	semanticrelease = semanticrelease.WithWorkdir("/src")
 
 	_, err := semanticrelease.Exec().Stdout(ctx)
 	if err != nil {
