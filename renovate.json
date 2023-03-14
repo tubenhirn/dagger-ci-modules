@@ -8,25 +8,6 @@
     "github>tubenhirn/renovate-config:postUpdateOptions",
     "github>tubenhirn/renovate-config:prHourlyLimit"
   ],
-  "ignorePaths": ["**/cue.mod/**"],
-  "packageRules": [
-    {
-      "description": "Trigger breaking release for major updates",
-      "matchUpdateTypes": ["major"],
-      "semanticCommitType": "feat",
-      "commitBody": "BREAKING CHANGE: Major update"
-    },
-    {
-      "description": "Trigger feature release for minor updates",
-      "matchUpdateTypes": ["minor"],
-      "semanticCommitType": "feat"
-    },
-    {
-      "description": "Trigger fix release for patch updates",
-      "matchUpdateTypes": ["patch", "digest"],
-      "semanticCommitType": "fix"
-    }
-  ],
   "regexManagers": [
     {
       "fileMatch": ["(^|/).*\\.go$"],
