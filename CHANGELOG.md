@@ -1,3 +1,16 @@
+# [4.2.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v4.1.0...v4.2.0) (2023-03-14)
+
+
+### Features
+
+* **deps:** update module github.com/tubenhirn/dagger-ci-modules/v4 to v4.1.0 ([8d5a747](https://github.com/tubenhirn/dagger-ci-modules/commit/8d5a747fdd72d4640f972c2aaa1d080dbd91fe7c))
+
+
+### Miscellaneous Chores
+
+* add sha to image version ([1838e98](https://github.com/tubenhirn/dagger-ci-modules/commit/1838e98747670d3995fd02c0745ea2342bbc14fe))
+* change version and add patch level ([6540208](https://github.com/tubenhirn/dagger-ci-modules/commit/6540208522070fad53ee3669a8d683b78bc1b865))
+
 # [4.1.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v4.0.1...v4.1.0) (2023-03-12)
 
 
