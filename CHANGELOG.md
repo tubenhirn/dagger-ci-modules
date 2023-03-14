@@ -1,3 +1,20 @@
+# [4.4.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v4.3.0...v4.4.0) (2023-03-14)
+
+
+### Continuous Integration
+
+* update renovate config ([ebf36e5](https://github.com/tubenhirn/dagger-ci-modules/commit/ebf36e595eb289d9f758a149c0a417c765706578))
+
+
+### Features
+
+* **deps:** update module github.com/tubenhirn/dagger-ci-modules/v4 to v4.3.0 ([b17f0e0](https://github.com/tubenhirn/dagger-ci-modules/commit/b17f0e0b515a231bedb5dcc278b2db086ac9b3c9))
+
+
+### Miscellaneous Chores
+
+* **deps:** update renovate/renovate docker tag to v35.4.1 ([35e4121](https://github.com/tubenhirn/dagger-ci-modules/commit/35e4121c436395a1cf86b21696e98dbcc4e03ddf))
+
 # [4.3.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v4.2.0...v4.3.0) (2023-03-14)
 
 
