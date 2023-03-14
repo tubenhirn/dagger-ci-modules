@@ -1,3 +1,15 @@
+# [4.3.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v4.2.0...v4.3.0) (2023-03-14)
+
+
+### Bug Fixes
+
+* remove digest, returning error ([f8e157a](https://github.com/tubenhirn/dagger-ci-modules/commit/f8e157a68e4d5cfb0dd84cf1f6e2ae0468ca6097))
+
+
+### Features
+
+* **deps:** update module github.com/tubenhirn/dagger-ci-modules/v4 to v4.2.0 ([b449f13](https://github.com/tubenhirn/dagger-ci-modules/commit/b449f137d78f0b65ee5c8135c866cc7a7a6da9f1))
+
 # [4.2.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v4.1.0...v4.2.0) (2023-03-14)
 
 
