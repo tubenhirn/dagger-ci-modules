@@ -1,3 +1,23 @@
+## [4.4.5](https://github.com/tubenhirn/dagger-ci-modules/compare/v4.4.4...v4.4.5) (2023-03-22)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/tubenhirn/dagger-ci-modules/v4 to v4.4.4 ([4d3490d](https://github.com/tubenhirn/dagger-ci-modules/commit/4d3490d5cb612ab54fbd3987f9d53e445a6dbe52))
+
+
+### Miscellaneous Chores
+
+* **deps:** update goreleaser/goreleaser docker tag to v1.16.2 ([81985b4](https://github.com/tubenhirn/dagger-ci-modules/commit/81985b4ed4a14346b540fa5bd98a114a287b3138))
+* **deps:** update renovate/renovate docker tag to v35.15.0 ([f9c24b4](https://github.com/tubenhirn/dagger-ci-modules/commit/f9c24b473659f74d67c1430641b2ad3d6e378c24))
+* **deps:** update renovate/renovate docker tag to v35.17.0 ([1d3db56](https://github.com/tubenhirn/dagger-ci-modules/commit/1d3db56d96918823c3a569ba6c8e91a84d54935d))
+* **deps:** update tubenhirn/semantic-release-git docker tag to v4.0.2 ([0a03e73](https://github.com/tubenhirn/dagger-ci-modules/commit/0a03e73d8671106acc47afdbd0294906e0b2b16c))
+* **deps:** update tubenhirn/semantic-release-git docker tag to v4.0.3 ([52451c3](https://github.com/tubenhirn/dagger-ci-modules/commit/52451c372eb10088c0df879456582bb99a1e4101))
+* **deps:** update tubenhirn/semantic-release-github docker tag to v4.0.2 ([5c3b2dd](https://github.com/tubenhirn/dagger-ci-modules/commit/5c3b2dda74f4df15240db2ff1525674d829b0d92))
+* **deps:** update tubenhirn/semantic-release-github docker tag to v4.0.3 ([f84c2b6](https://github.com/tubenhirn/dagger-ci-modules/commit/f84c2b6fd66867f7332f56ea8a41aa4b9d80ecb4))
+* **deps:** update tubenhirn/semantic-release-gitlab docker tag to v4.0.2 ([065b2a8](https://github.com/tubenhirn/dagger-ci-modules/commit/065b2a89503855b1ff5f56a7899e7e32158c783b))
+* **deps:** update tubenhirn/semantic-release-gitlab docker tag to v4.0.3 ([59acdfa](https://github.com/tubenhirn/dagger-ci-modules/commit/59acdfa67fd9dd5b988af6ec20a0315f75a3d2d9))
+
 ## [4.4.4](https://github.com/tubenhirn/dagger-ci-modules/compare/v4.4.3...v4.4.4) (2023-03-19)
 
 
