@@ -26,7 +26,7 @@ type image struct {
 var renovateImage = image{
 	Name: "renovate/renovate",
 	//# renovate: datasource=docker depName=renovate/renovate versioning=docker
-	Version: "35.15.0",
+	Version: "35.17.0",
 }
 
 func renovate(ctx context.Context, client dagger.Client, opts RenovateOpts) error {
