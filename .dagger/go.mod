@@ -3,7 +3,7 @@ module ci
 go 1.20
 
 require (
-	dagger.io/dagger v0.5.1
+	dagger.io/dagger v0.5.2
 	github.com/tubenhirn/dagger-ci-modules/v4 v4.4.4
 )
 
