@@ -1,3 +1,18 @@
+## [4.4.6](https://github.com/tubenhirn/dagger-ci-modules/compare/v4.4.5...v4.4.6) (2023-03-30)
+
+
+### Bug Fixes
+
+* **deps:** update module dagger.io/dagger to v0.5.2 ([3866a4a](https://github.com/tubenhirn/dagger-ci-modules/commit/3866a4af59e7e53a1f07546d099a67a6e18d94ef))
+* **deps:** update module github.com/tubenhirn/dagger-ci-modules/v4 to v4.4.5 ([8d2c357](https://github.com/tubenhirn/dagger-ci-modules/commit/8d2c357bc40dcb8a4e9f55d5e4613b343398155c))
+
+
+### Miscellaneous Chores
+
+* **deps:** update renovate/renovate docker tag to v35.18.0 ([9f93355](https://github.com/tubenhirn/dagger-ci-modules/commit/9f93355f79c941142a48ceb4e5c323c4e79e5051))
+* **deps:** update renovate/renovate docker tag to v35.24.3 ([ffa0751](https://github.com/tubenhirn/dagger-ci-modules/commit/ffa0751d355e7efffc693cc2125755afd81182f6))
+* **deps:** update renovate/renovate docker tag to v35.25.0 ([ab532bc](https://github.com/tubenhirn/dagger-ci-modules/commit/ab532bc30bc092a03c0b400cd9e0702182778cad))
+
 ## [4.4.5](https://github.com/tubenhirn/dagger-ci-modules/compare/v4.4.4...v4.4.5) (2023-03-22)
 
 
