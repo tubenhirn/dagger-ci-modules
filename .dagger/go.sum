@@ -50,8 +50,8 @@ github.com/stretchr/testify v1.4.0/go.mod h1:j7eGeouHqKxXV5pUuKE4zz7dFj8WfuZ+81P
 github.com/stretchr/testify v1.6.1/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
 github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
 github.com/stretchr/testify v1.8.1 h1:w7B6lhMri9wdJUVmEZPGGhZzrYTPvgJArz7wNPgYKsk=
-github.com/tubenhirn/dagger-ci-modules/v4 v4.4.8 h1:eFZI6kqg7L0KmnOsorLTlnqSr/mu3VPXBHy/ebwSDEM=
-github.com/tubenhirn/dagger-ci-modules/v4 v4.4.8/go.mod h1:VMddnS1mUdeRqC+T60KIHLm8mCLqlAwUhL1kePGa36M=
+github.com/tubenhirn/dagger-ci-modules/v4 v4.4.9 h1:blCnFfAqB3QdPqvdK/QR1vkcN/LyZtMIbqwDwE4jA1Y=
+github.com/tubenhirn/dagger-ci-modules/v4 v4.4.9/go.mod h1:JSIWufqfR2GI5NGpBySnShdOLa3DmlKIrvf3vHcUPTU=
 github.com/urfave/cli/v2 v2.3.0/go.mod h1:LJmUH05zAU44vOAcrfzZQKsZbVcdbOG8rtL3/XcUArI=
 github.com/vektah/gqlparser/v2 v2.4.0/go.mod h1:flJWIR04IMQPGz+BXLrORkrARBxv/rtyIAFvd/MceW0=
 github.com/vektah/gqlparser/v2 v2.4.5/go.mod h1:flJWIR04IMQPGz+BXLrORkrARBxv/rtyIAFvd/MceW0=
