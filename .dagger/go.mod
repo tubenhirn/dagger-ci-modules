@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	dagger.io/dagger v0.7.1
-	github.com/tubenhirn/dagger-ci-modules/v4 v4.4.15
+	github.com/tubenhirn/dagger-ci-modules/v4 v4.4.16
 )
 
 require (
