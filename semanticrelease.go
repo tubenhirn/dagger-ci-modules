@@ -28,7 +28,7 @@ var semanticreleaseGithubImage = image{
 var semanticreleaseGitlabImage = image{
 	Name: "tubenhirn/semantic-release-gitlab",
 	//# renovate: datasource=docker depName=tubenhirn/semantic-release-gitlab versioning=docker
-	Version: "v4.0.5",
+	Version: "v4.0.6",
 }
 
 var semanticreleaseGitImage = image{
