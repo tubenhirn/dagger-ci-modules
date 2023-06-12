@@ -22,7 +22,7 @@ type SemanticOpts struct {
 var semanticreleaseGithubImage = image{
 	Name: "tubenhirn/semantic-release-github",
 	//# renovate: datasource=docker depName=tubenhirn/semantic-release-github versioning=docker
-	Version: "v4.0.5",
+	Version: "v4.0.6",
 }
 
 var semanticreleaseGitlabImage = image{
