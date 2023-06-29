@@ -34,7 +34,7 @@ var semanticreleaseGitlabImage = image{
 var semanticreleaseGitImage = image{
 	Name: "tubenhirn/semantic-release-git",
 	//# renovate: datasource=docker depName=tubenhirn/semantic-release-git versioning=docker
-	Version: "v4.0.7",
+	Version: "v4.0.8",
 }
 
 func semanticrelease(ctx context.Context, client dagger.Client, opts SemanticOpts) error {
