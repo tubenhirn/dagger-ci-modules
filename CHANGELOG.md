@@ -1,3 +1,20 @@
+## [4.4.19](https://github.com/tubenhirn/dagger-ci-modules/compare/v4.4.18...v4.4.19) (2023-06-29)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/tubenhirn/dagger-ci-modules/v4 to v4.4.18 ([2ef3565](https://github.com/tubenhirn/dagger-ci-modules/commit/2ef3565bc402030b8042bdc6648b023a5359b68f))
+
+
+### Miscellaneous Chores
+
+* **deps:** update goreleaser/goreleaser docker tag to v1.19.0 ([68bebd0](https://github.com/tubenhirn/dagger-ci-modules/commit/68bebd029d8e29b5f227fc5f95e6ff97d24e9f00))
+* **deps:** update renovate/renovate docker tag to v35.143.0 ([f6ca1e4](https://github.com/tubenhirn/dagger-ci-modules/commit/f6ca1e4211be3d942cc58556ff44b40cdf2b7b7c))
+* **deps:** update renovate/renovate docker tag to v35.144.2 ([18b0142](https://github.com/tubenhirn/dagger-ci-modules/commit/18b014227a31034267440c3a63fed90329e2043f))
+* **deps:** update tubenhirn/semantic-release-git docker tag to v4.0.7 ([c8ae13f](https://github.com/tubenhirn/dagger-ci-modules/commit/c8ae13f61924ad4599ae5a726a639a9bb8087343))
+* **deps:** update tubenhirn/semantic-release-github docker tag to v4.0.7 ([6bf2283](https://github.com/tubenhirn/dagger-ci-modules/commit/6bf22838f2615e8626433fb3916d6e81d0616699))
+* **deps:** update tubenhirn/semantic-release-gitlab docker tag to v4.0.7 ([0f2f6cd](https://github.com/tubenhirn/dagger-ci-modules/commit/0f2f6cd341fd3a5af8e2f3fda34793208ebf8642))
+
 ## [4.4.18](https://github.com/tubenhirn/dagger-ci-modules/compare/v4.4.17...v4.4.18) (2023-06-27)
 
 
