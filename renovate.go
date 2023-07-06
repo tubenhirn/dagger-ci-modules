@@ -28,7 +28,7 @@ var renovateImage = image{
 	Name: "renovate/renovate",
 	//# renovate: datasource=docker depName=renovate/renovate versioning=docker
 	Version: "36.1.11",
-	Suffix:  "full",
+	Suffix:  "slim",
 }
 
 func renovate(ctx context.Context, client dagger.Client, opts RenovateOpts) error {
