@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "baseBranches": ["main"],
   "extends": [
-    "config:base",
+    "config:recommended",
     ":semanticCommits",
     ":disableDependencyDashboard",
     "github>tubenhirn/renovate-config:postUpdateOptions",
