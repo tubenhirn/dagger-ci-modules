@@ -1,3 +1,10 @@
+# [5.1.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.0.1...v5.1.0) (2023-07-06)
+
+
+### Features
+
+* use renovate slim image ([9d4682b](https://github.com/tubenhirn/dagger-ci-modules/commit/9d4682b0a0df54c723865686a7e0b13d02ea6fab))
+
 ## [5.0.1](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.0.0...v5.0.1) (2023-07-06)
 
 
