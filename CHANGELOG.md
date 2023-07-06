@@ -1,3 +1,28 @@
+# [5.0.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v4.4.20...v5.0.0) (2023-07-06)
+
+
+### Bug Fixes
+
+* **deps:** update module dagger.io/dagger to v0.7.3 ([45ffd3b](https://github.com/tubenhirn/dagger-ci-modules/commit/45ffd3b3e5a322aee1c8be287d8e5244522310d1))
+* **deps:** update module github.com/tubenhirn/dagger-ci-modules/v4 to v4.4.20 ([13d15b0](https://github.com/tubenhirn/dagger-ci-modules/commit/13d15b07236fbfd3317d5f36cbfe7817a42c2d73))
+
+
+### Features
+
+* support new renovate slim/full images ([42141b3](https://github.com/tubenhirn/dagger-ci-modules/commit/42141b38cee5788feac7b4264e7463460d9f35ec))
+
+
+### Miscellaneous Chores
+
+* **deps:** update renovate/renovate docker tag to v35.159.3 ([5648303](https://github.com/tubenhirn/dagger-ci-modules/commit/5648303d906d81a0bb324562ce5468152ef584fa))
+* **deps:** update renovate/renovate docker tag to v36 ([76090f1](https://github.com/tubenhirn/dagger-ci-modules/commit/76090f1542b86fa7ee7a3e59245241348408e5eb))
+* update module version to v5 ([785db1a](https://github.com/tubenhirn/dagger-ci-modules/commit/785db1a17dc590a57c38939702a1a3c7a5f7c2fd))
+
+
+### BREAKING CHANGE
+
+* support new renovate slim/full images
+
 ## [4.4.20](https://github.com/tubenhirn/dagger-ci-modules/compare/v4.4.19...v4.4.20) (2023-07-03)
 
 
