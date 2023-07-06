@@ -9,7 +9,7 @@ a module providing goreleaser. https://github.com/goreleaser/goreleaser
 ```go
 import (
     "dagger.io/dagger"
-    "github.com/tubenhirn/dagger-ci-modules/v4"
+    "github.com/tubenhirn/dagger-ci-modules/v5"
 )
 
 // a context
@@ -44,7 +44,7 @@ a module providing semantic-release. https://github.com/semantic-release/github
 ```go
 import (
     "dagger.io/dagger"
-    "github.com/tubenhirn/dagger-ci-modules/v4"
+    "github.com/tubenhirn/dagger-ci-modules/v5"
 )
 
 // a context
@@ -86,7 +86,7 @@ a module providing renovate. https://github.com/renovatebot/renovate
 ```go
 import (
     "dagger.io/dagger"
-    "github.com/tubenhirn/dagger-ci-modules/v4"
+    "github.com/tubenhirn/dagger-ci-modules/v5"
 )
 
 // a context
