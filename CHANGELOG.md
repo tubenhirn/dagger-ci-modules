@@ -1,3 +1,23 @@
+## [5.0.1](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.0.0...v5.0.1) (2023-07-06)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/tubenhirn/dagger-ci-modules/v4 to v5 ([148291e](https://github.com/tubenhirn/dagger-ci-modules/commit/148291eb46fada84842e8195873b2619c8827edd))
+* **deps:** update module github.com/tubenhirn/dagger-ci-modules/v4 to v5 ([a341d8e](https://github.com/tubenhirn/dagger-ci-modules/commit/a341d8e854e37abfa765b3b07970d50f9088a2bd))
+* fix createImageString function ([e8b5d9b](https://github.com/tubenhirn/dagger-ci-modules/commit/e8b5d9bbbc83323bce1ed909a1b09b65c12dd45e))
+
+
+### Continuous Integration
+
+* update dagger modules ([d641c7b](https://github.com/tubenhirn/dagger-ci-modules/commit/d641c7b419a8502db27b190f8d179826c42431b0))
+* update renovate config to match new v36 settings ([7ebbd55](https://github.com/tubenhirn/dagger-ci-modules/commit/7ebbd556a90f672827573042451ab0debdc6c250))
+
+
+### Miscellaneous Chores
+
+* **deps:** update renovate/renovate docker tag to v36.1.11 ([f030081](https://github.com/tubenhirn/dagger-ci-modules/commit/f0300816f9cadd7124ca19f42440614e61e5bfcd))
+
 # [5.0.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v4.4.20...v5.0.0) (2023-07-06)
 
 
