@@ -21,12 +21,14 @@ type RenovateOpts struct {
 type image struct {
 	Name    string
 	Version string
+	Suffix  string
 }
 
 var renovateImage = image{
 	Name: "renovate/renovate",
 	//# renovate: datasource=docker depName=renovate/renovate versioning=docker
 	Version: "36.0.0",
+	Suffix:  "full",
 }
 
 func renovate(ctx context.Context, client dagger.Client, opts RenovateOpts) error {
