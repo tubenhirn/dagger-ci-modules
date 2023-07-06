@@ -14,11 +14,6 @@ type SemanticOpts struct {
 	Secret   map[string]dagger.SecretID
 }
 
-// type image struct {
-// 	Name    string
-// 	Version string
-// }
-
 var semanticreleaseGithubImage = image{
 	Name: "tubenhirn/semantic-release-github",
 	//# renovate: datasource=docker depName=tubenhirn/semantic-release-github versioning=docker
