@@ -121,6 +121,38 @@ options := cimodules.RenovateOpts{
 cimodules.Renovate(ctx, *client, options)
 ```
 
+## custom images
+
+you can hand over custom container images to run the jobs with.
+
+the following example will result in the custom image string **mycustom/renovateImage:1.0-stable**.
+
+```go
+...
+
+options := cimodules.RenovateOpts{
+    Platform: "github",
+    Autodiscover: false,
+    AutodiscoverFilter: "",
+    Repositories: "tubenhirn/dagger-ci-modules",
+    Env: map[string]string{},
+    Secret: map[string]dagger.SecretID{
+        "RENOVATE_TOKEN": renovateTokenId,
+        "GITHUB_COM_TOKEN":   renovateTokenId,
+    },
+    LogLevel: "debug",
+    Image: {
+        Name: "mycustom/renovateImage",
+        Version: "1.0",
+        Suffix: "stable"
+    }
+}
+
+cimodules.Renovate(ctx, *client, options)
+
+...
+```
+
 ## create a new release
 
 use the included `Makefile` to run the release job.

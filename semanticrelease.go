@@ -12,21 +12,22 @@ type SemanticOpts struct {
 	Platform string
 	Env      map[string]string
 	Secret   map[string]dagger.SecretID
+	Image    Image
 }
 
-var semanticreleaseGithubImage = image{
+var defaultSemanticreleaseGithubImage = Image{
 	Name: "tubenhirn/semantic-release-github",
 	//# renovate: datasource=docker depName=tubenhirn/semantic-release-github versioning=docker
 	Version: "v4.0.8",
 }
 
-var semanticreleaseGitlabImage = image{
+var defaultSemanticreleaseGitlabImage = Image{
 	Name: "tubenhirn/semantic-release-gitlab",
 	//# renovate: datasource=docker depName=tubenhirn/semantic-release-gitlab versioning=docker
 	Version: "v4.0.8",
 }
 
-var semanticreleaseGitImage = image{
+var defaultSemanticreleaseGitImage = Image{
 	Name: "tubenhirn/semantic-release-git",
 	//# renovate: datasource=docker depName=tubenhirn/semantic-release-git versioning=docker
 	Version: "v4.0.8",
@@ -39,11 +40,11 @@ func semanticrelease(ctx context.Context, client dagger.Client, opts SemanticOpt
 	var image string
 	switch opts.Platform {
 	case "github":
-		image = createImageString(semanticreleaseGithubImage)
+		image = createImageString(defaultSemanticreleaseGithubImage, opts.Image)
 	case "gitlab":
-		image = createImageString(semanticreleaseGitlabImage)
+		image = createImageString(defaultSemanticreleaseGitlabImage, opts.Image)
 	case "git":
-		image = createImageString(semanticreleaseGitImage)
+		image = createImageString(defaultSemanticreleaseGitImage, opts.Image)
 	default:
 		return errors.New("Platform net set.")
 	}

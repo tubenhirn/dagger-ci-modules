@@ -13,9 +13,10 @@ type GoReleaserOpts struct {
 	RemoveDist bool `default:"false"`
 	Env        map[string]string
 	Secret     map[string]dagger.SecretID
+	Image      Image
 }
 
-var goreleaserImage = image{
+var defaultGoreleaserImage = Image{
 	Name: "goreleaser/goreleaser",
 	//# renovate: datasource=docker depName=goreleaser/goreleaser versioning=docker
 	Version: "v1.19.1",
@@ -26,7 +27,7 @@ func release(ctx context.Context, client dagger.Client, opts GoReleaserOpts) err
 	commands := createFlags(opts)
 	sourceDir := client.Host().Directory(opts.Source)
 
-	goreleaser := client.Container().From(createImageString(goreleaserImage))
+	goreleaser := client.Container().From(createImageString(defaultGoreleaserImage, opts.Image))
 	goreleaser = goreleaser.WithMountedDirectory("/src", sourceDir)
 	goreleaser = goreleaser.WithWorkdir("/src")
 
