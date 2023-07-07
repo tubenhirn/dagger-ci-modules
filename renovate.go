@@ -16,15 +16,10 @@ type RenovateOpts struct {
 	Env                map[string]string
 	Secret             map[string]dagger.SecretID
 	LogLevel           string
+	Image              Image
 }
 
-type image struct {
-	Name    string
-	Version string
-	Suffix  string
-}
-
-var renovateImage = image{
+var defaultRenovateImage = Image{
 	Name: "renovate/renovate",
 	//# renovate: datasource=docker depName=renovate/renovate versioning=docker
 	Version: "36.1.11",
@@ -32,7 +27,7 @@ var renovateImage = image{
 }
 
 func renovate(ctx context.Context, client dagger.Client, opts RenovateOpts) error {
-	image := client.Container().From(createImageString(renovateImage))
+	image := client.Container().From(createImageString(defaultRenovateImage, opts.Image))
 
 	// used to avoid dagger caching
 	// we want this function to be executed every time we run it

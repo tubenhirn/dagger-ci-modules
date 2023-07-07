@@ -2,10 +2,17 @@ package cimodules
 
 import "fmt"
 
-func createImageString(img image) string {
-	suffix := ""
-	if img.Suffix != "" {
-		suffix = fmt.Sprintf("-%s", img.Suffix)
+func createImageString(defaultImg Image, customImage Image) string {
+	image := defaultImg
+
+	if customImage.Suffix != "" {
+		image.Suffix = fmt.Sprintf("-%s", customImage.Suffix)
 	}
-	return fmt.Sprintf("%s:%s%s", img.Name, img.Version, suffix)
+	if customImage.Name != "" {
+		image.Name = customImage.Name
+	}
+	if customImage.Version != "" {
+		image.Version = customImage.Version
+	}
+	return fmt.Sprintf("%s:%s%s", image.Name, image.Version, image.Suffix)
 }
