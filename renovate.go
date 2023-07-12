@@ -22,7 +22,7 @@ type RenovateOpts struct {
 var defaultRenovateImage = Image{
 	Name: "renovate/renovate",
 	//# renovate: datasource=docker depName=renovate/renovate versioning=docker
-	Version: "36.6.0",
+	Version: "36.7.2",
 	Suffix:  "slim",
 }
 
