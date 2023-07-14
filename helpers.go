@@ -7,7 +7,7 @@ func createImageString(defaultImg Image, customImage Image) string {
 
 	if customImage.Suffix != "" {
 		image.Suffix = fmt.Sprintf("-%s", customImage.Suffix)
-	} else {
+	} else if image.Suffix != "" {
 		image.Suffix = fmt.Sprintf("-%s", image.Suffix)
 	}
 	if customImage.Name != "" {
