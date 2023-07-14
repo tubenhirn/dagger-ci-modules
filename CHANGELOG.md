@@ -1,3 +1,20 @@
+## [5.2.1](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.2.0...v5.2.1) (2023-07-14)
+
+
+### Bug Fixes
+
+* default image can have a suffix also ([58e8b87](https://github.com/tubenhirn/dagger-ci-modules/commit/58e8b8701e5f563b15b4ee3bb78ba942397bd441))
+* **deps:** update module github.com/tubenhirn/dagger-ci-modules/v5 to v5.2.0 ([33a3403](https://github.com/tubenhirn/dagger-ci-modules/commit/33a3403daf1b9fba1869f7f1810fb082419b0174))
+* fix image suffix for default image ([a2db188](https://github.com/tubenhirn/dagger-ci-modules/commit/a2db188d94cf7c283436a1787a37dc38574b7493))
+
+
+### Miscellaneous Chores
+
+* **deps:** update goreleaser/goreleaser docker tag to v1.19.2 ([55db261](https://github.com/tubenhirn/dagger-ci-modules/commit/55db26195f17b1a6128c5f5e0dc74277e9445f07))
+* **deps:** update renovate/renovate docker tag to v36.3.0 ([6213eb0](https://github.com/tubenhirn/dagger-ci-modules/commit/6213eb081202501dd6db44e5662512182400a15b))
+* **deps:** update renovate/renovate docker tag to v36.6.0 ([0067680](https://github.com/tubenhirn/dagger-ci-modules/commit/00676804f676b0c7e2653bf806ae62fc0c02bcda))
+* **deps:** update renovate/renovate docker tag to v36.7.2 ([264853c](https://github.com/tubenhirn/dagger-ci-modules/commit/264853c9f1923f8c89959f795c4bb88e6d3c3e68))
+
 # [5.2.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.1.0...v5.2.0) (2023-07-07)
 
 
