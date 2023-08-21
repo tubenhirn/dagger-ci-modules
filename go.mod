@@ -2,7 +2,7 @@ module github.com/tubenhirn/dagger-ci-modules/v5
 
 go 1.20
 
-require dagger.io/dagger v0.8.3
+require dagger.io/dagger v0.8.4
 
 require (
 	github.com/99designs/gqlgen v0.17.31 // indirect
