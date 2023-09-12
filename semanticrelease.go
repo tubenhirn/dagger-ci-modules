@@ -64,7 +64,7 @@ func semanticrelease(ctx context.Context, client dagger.Client, opts SemanticOpt
 		semanticrelease = semanticrelease.WithEnvVariable(key, val)
 	}
 
-	_, err := semanticrelease.Exec().Stdout(ctx)
+	_, err := semanticrelease.WithExec(nil).Stdout(ctx)
 	if err != nil {
 		return err
 	}

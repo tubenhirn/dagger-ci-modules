@@ -30,19 +30,23 @@ func main() {
 	var secrets = make(map[string]dagger.SecretID)
 	switch *platform {
 	case "github":
-		githubTokenId, err := client.Host().EnvVariable("GITHUB_TOKEN").Secret().ID(ctx)
+		token := os.Getenv("GITHUB_TOKEN")
+		githubTokenId, err := client.SetSecret("GITHUB_TOKEN", token).ID(ctx)
 		if err != nil {
 			panic(err)
 		}
 		secrets["GITHUB_TOKEN"] = githubTokenId
 	case "gitlab":
-		gitlabTokenId, err := client.Host().EnvVariable("GITLAB_TOKEN").Secret().ID(ctx)
+		token := os.Getenv("GITLAB_TOKEN")
+		gitlabTokenId, err := client.SetSecret("GITHUB_TOKEN", token).ID(ctx)
+		client.Container().EnvVariable(ctx, "GITLAB_TOKEN")
 		if err != nil {
 			panic(err)
 		}
 		secrets["GITLAB_TOKEN"] = gitlabTokenId
 	case "git":
-		githubTokenId, err := client.Host().EnvVariable("GITHUB_TOKEN").Secret().ID(ctx)
+		token := os.Getenv("GITHUB_TOKEN")
+		githubTokenId, err := client.SetSecret("GITHUB_TOKEN", token).ID(ctx)
 		if err != nil {
 			panic(err)
 		}
