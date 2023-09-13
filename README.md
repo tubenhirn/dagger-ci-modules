@@ -43,6 +43,8 @@ a module providing semantic-release. https://github.com/semantic-release/github
 
 ```go
 import (
+    "os"
+
     "dagger.io/dagger"
     "github.com/tubenhirn/dagger-ci-modules/v5"
 )
@@ -59,10 +61,13 @@ if err != nil {
 defer client.Close()
 
 var secrets = make(map[string]dagger.SecretID)
-githubTokenId, err = client.Host().EnvVariable("GITHUB_ACCESS_TOKEN").Secret().ID(ctx)
+
+token := os.Getenv("GITHUB_TOKEN")
+githubTokenId, err := client.SetSecret("GITHUB_TOKEN", token).ID(ctx)
 if err != nil {
     panic(err)
 }
+
 secrets["GITHUB_TOKEN"] = githubTokenId
 
 dir, _ := os.Getwd()
@@ -85,6 +90,8 @@ a module providing renovate. https://github.com/renovatebot/renovate
 
 ```go
 import (
+    "os"
+
     "dagger.io/dagger"
     "github.com/tubenhirn/dagger-ci-modules/v5"
 )
@@ -100,7 +107,8 @@ if err != nil {
 
 defer client.Close()
 
-renovateTokenId, err = client.Host().EnvVariable("GITHUB_ACCESS_TOKEN").Secret().ID(ctx)
+token := os.Getenv("GITHUB_ACCESS_TOKEN")
+renovateTokenId, err := client.SetSecret("GITHUB_ACCESS_TOKEN", token).ID(ctx)
 if err != nil {
     panic(err)
 }
