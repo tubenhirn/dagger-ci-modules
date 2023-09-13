@@ -8,6 +8,8 @@ a module providing goreleaser. https://github.com/goreleaser/goreleaser
 
 ```go
 import (
+    "os"
+
     "dagger.io/dagger"
     "github.com/tubenhirn/dagger-ci-modules/v5"
 )
