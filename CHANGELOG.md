@@ -1,3 +1,20 @@
+## [5.2.4](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.2.3...v5.2.4) (2023-09-13)
+
+
+### Bug Fixes
+
+* fix commit to create a new release ([30e8ba9](https://github.com/tubenhirn/dagger-ci-modules/commit/30e8ba9c438d256fa364dada8321fa814c93dd6b))
+
+
+### Continuous Integration
+
+* update dagger code to match new env handling ([39488cf](https://github.com/tubenhirn/dagger-ci-modules/commit/39488cf35a1404e331ddb3b32778d244ca9fd977))
+
+
+### Documentation
+
+* update example code snippets ([100de13](https://github.com/tubenhirn/dagger-ci-modules/commit/100de13219993653947118901190b1273d8ce33b))
+
 ## [5.2.3](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.2.2...v5.2.3) (2023-09-12)
 
 
