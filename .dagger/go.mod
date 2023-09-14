@@ -3,7 +3,7 @@ module ci
 go 1.20
 
 require (
-	dagger.io/dagger v0.8.4
+	dagger.io/dagger v0.8.5
 	github.com/tubenhirn/dagger-ci-modules/v5 v5.2.4
 )
 
@@ -15,5 +15,5 @@ require (
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	github.com/vektah/gqlparser/v2 v2.5.6 // indirect
 	golang.org/x/sync v0.3.0 // indirect
-	golang.org/x/sys v0.10.0 // indirect
+	golang.org/x/sys v0.12.0 // indirect
 )
