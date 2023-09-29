@@ -1,3 +1,18 @@
+## [5.2.8](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.2.7...v5.2.8) (9/29/2023)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/tubenhirn/dagger-ci-modules/v5 to v5.2.7 ([bf69d3a](https://github.com/tubenhirn/dagger-ci-modules/commit/bf69d3a0d2756f460403a18ef135ace379cc2c7b))
+
+
+### Miscellaneous Chores
+
+* **deps:** update renovate/renovate docker tag to v37 ([dd1e04a](https://github.com/tubenhirn/dagger-ci-modules/commit/dd1e04aab97577574453a7388ea25d6150810b98))
+* **deps:** update tubenhirn/semantic-release-git docker tag to v4.0.13 ([047c08a](https://github.com/tubenhirn/dagger-ci-modules/commit/047c08a21e1461800543d138295bf7f273b7c37f))
+* **deps:** update tubenhirn/semantic-release-github docker tag to v4.0.13 ([a71afed](https://github.com/tubenhirn/dagger-ci-modules/commit/a71afed3f0fddfac57d92804800f634f0029ee4a))
+* **deps:** update tubenhirn/semantic-release-gitlab docker tag to v4.0.13 ([d7e3e46](https://github.com/tubenhirn/dagger-ci-modules/commit/d7e3e46652c4a782c99b5e98841706ffc96387a0))
+
 ## [5.2.7](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.2.6...v5.2.7) (2023-09-27)
 
 
