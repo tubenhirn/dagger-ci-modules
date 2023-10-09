@@ -1,3 +1,15 @@
+## [5.2.10](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.2.9...v5.2.10) (10/9/2023)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/tubenhirn/dagger-ci-modules/v5 to v5.2.9 ([8c69a6a](https://github.com/tubenhirn/dagger-ci-modules/commit/8c69a6a6bf6e45ca4e72df2d79c878173a4a817f))
+
+
+### Miscellaneous Chores
+
+* **deps:** update renovate/renovate docker tag to v37.8.1 ([f28afb2](https://github.com/tubenhirn/dagger-ci-modules/commit/f28afb2028e06d36c0c0ac969bb9bed8c79d7deb))
+
 ## [5.2.9](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.2.8...v5.2.9) (10/6/2023)
 
 
