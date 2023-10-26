@@ -30,7 +30,7 @@ var defaultSemanticreleaseGitlabImage = Image{
 var defaultSemanticreleaseGitImage = Image{
 	Name: "tubenhirn/semantic-release-git",
 	//# renovate: datasource=docker depName=tubenhirn/semantic-release-git versioning=docker
-	Version: "v4.0.14",
+	Version: "v4.1.2",
 }
 
 func semanticrelease(ctx context.Context, client dagger.Client, opts SemanticOpts) error {
