@@ -56,7 +56,7 @@ func semanticrelease(ctx context.Context, client dagger.Client, opts SemanticOpt
 
 	// write env secrets - access-tokens etc.
 	for key, val := range opts.Secret {
-		semanticrelease = semanticrelease.WithSecretVariable(key, client.Secret(val))
+		semanticrelease = semanticrelease.WithSecretVariable(key, client.LoadSecretFromID(val))
 	}
 
 	// write dditional env variables

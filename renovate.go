@@ -50,7 +50,7 @@ func renovate(ctx context.Context, client dagger.Client, opts RenovateOpts) erro
 
 	// write env secrets - access-tokens etc.
 	for key, val := range opts.Secret {
-		renovate = renovate.WithSecretVariable(key, client.Secret(val))
+		renovate = renovate.WithSecretVariable(key, client.LoadSecretFromID(val))
 	}
 
 	// write dditional env variables

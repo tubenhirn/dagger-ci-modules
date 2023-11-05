@@ -33,7 +33,7 @@ func release(ctx context.Context, client dagger.Client, opts GoReleaserOpts) err
 
 	// write env secrets - access-tokens etc.
 	for key, val := range opts.Secret {
-		goreleaser = goreleaser.WithSecretVariable(key, client.Secret(val))
+		goreleaser = goreleaser.WithSecretVariable(key, client.LoadSecretFromID(val))
 	}
 
 	// write env variables
