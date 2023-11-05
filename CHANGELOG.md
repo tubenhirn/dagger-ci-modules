@@ -1,3 +1,10 @@
+## [5.2.14](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.2.13...v5.2.14) (11/5/2023)
+
+
+### Bug Fixes
+
+* add custom entrypoint ([0eeff1f](https://github.com/tubenhirn/dagger-ci-modules/commit/0eeff1fe5e0f5bd4cadcc5d69b6165ce0026b224))
+
 ## [5.2.13](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.2.12...v5.2.13) (11/5/2023)
 
 
