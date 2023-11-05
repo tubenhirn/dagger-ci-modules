@@ -1,3 +1,10 @@
+## [5.2.13](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.2.12...v5.2.13) (11/5/2023)
+
+
+### Bug Fixes
+
+* skip entrypoint for renovate ([62f3040](https://github.com/tubenhirn/dagger-ci-modules/commit/62f30409b2214e05f81435143fa1bd3f6c5f4317))
+
 ## [5.2.12](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.2.11...v5.2.12) (11/5/2023)
 
 
