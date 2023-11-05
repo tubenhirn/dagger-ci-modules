@@ -1,3 +1,10 @@
+## [5.2.15](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.2.14...v5.2.15) (11/5/2023)
+
+
+### Bug Fixes
+
+* update entrypoint command ([da37258](https://github.com/tubenhirn/dagger-ci-modules/commit/da3725861ff6b3caf9744f8b21f1e9712f517f23))
+
 ## [5.2.14](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.2.13...v5.2.14) (11/5/2023)
 
 
