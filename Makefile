@@ -21,7 +21,11 @@
 # //******//********  *****   ***** //******/***         //***** /**       *** /** /**//****** //******//****** ***//****** ******
 #  //////  ////////  /////   /////   ////// ///           /////  //       ///  //  //  //////   //////  ////// ///  ////// //////
 
-release: ## tag and release
+test: ## run tests
+	@echo "run tests..."
+	go test -v ./...
+
+release: test ## tag and release
 	@echo "tag and release..."
 	go run .dagger/ci.go --platform=github
 
