@@ -1,3 +1,15 @@
+## [5.2.17](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.2.16...v5.2.17) (11/6/2023)
+
+
+### Bug Fixes
+
+* remove default image suffix ([04258d1](https://github.com/tubenhirn/dagger-ci-modules/commit/04258d1765f2064559475a64acbf7be3b4a22a09))
+
+
+### Continuous Integration
+
+* add test setp to makefile ([c9627ad](https://github.com/tubenhirn/dagger-ci-modules/commit/c9627ad2e63bca3c48d08c7235ba818f2089afb2))
+
 ## [5.2.16](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.2.15...v5.2.16) (11/5/2023)
 
 
