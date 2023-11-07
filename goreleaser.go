@@ -19,7 +19,7 @@ type GoReleaserOpts struct {
 var defaultGoreleaserImage = Image{
 	Name: "goreleaser/goreleaser",
 	//# renovate: datasource=docker depName=goreleaser/goreleaser versioning=docker
-	Version: "v1.21.2",
+	Version: "v1.22.0",
 }
 
 func release(ctx context.Context, client dagger.Client, opts GoReleaserOpts) error {
