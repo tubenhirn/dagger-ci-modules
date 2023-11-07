@@ -12,7 +12,7 @@ var customImage = Image{
 }
 
 func TestCreateImageString(t *testing.T) {
-	assert.Equal(t, "renovate/renovate:37.42.0", createImageString(defaultRenovateImage, Image{}))
+	assert.Equal(t, "renovate/renovate:37.50.1", createImageString(defaultRenovateImage, Image{}))
 	assert.Equal(t, "custom:1.2.3-suffix", createImageString(defaultRenovateImage, customImage))
 	// test a failure case
 	assert.NotEqual(t, "custom:1.2.3", createImageString(defaultRenovateImage, customImage))
