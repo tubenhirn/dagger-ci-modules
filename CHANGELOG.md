@@ -1,3 +1,24 @@
+## [5.2.18](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.2.17...v5.2.18) (11/7/2023)
+
+
+### Bug Fixes
+
+* **deps:** update module dagger.io/dagger to v0.9.3 ([9a9e807](https://github.com/tubenhirn/dagger-ci-modules/commit/9a9e8070ba0ccbc087350b344459067d4caa5b4b))
+* **deps:** update module github.com/tubenhirn/dagger-ci-modules/v5 to v5.2.17 ([3612c84](https://github.com/tubenhirn/dagger-ci-modules/commit/3612c84067758d5e68a56004b74d4e3015c03c7f))
+* update tests ([ff3c034](https://github.com/tubenhirn/dagger-ci-modules/commit/ff3c034e41a088d8f04cd650fc7036a574e8c3bb))
+
+
+### Continuous Integration
+
+* add DOCKER_HOST ([a7982ad](https://github.com/tubenhirn/dagger-ci-modules/commit/a7982ad67b44d0ffc57aa6acf14fdf482a4d7129))
+
+
+### Miscellaneous Chores
+
+* **deps:** update goreleaser/goreleaser docker tag to v1.22.0 ([a90d23f](https://github.com/tubenhirn/dagger-ci-modules/commit/a90d23f43e477ba579acbe4b4c33581e64c1b020))
+* **deps:** update renovate/renovate docker tag to v37.46.0 ([acc381a](https://github.com/tubenhirn/dagger-ci-modules/commit/acc381a15a2251521ee2fa955e99f97c811fedfb))
+* **deps:** update renovate/renovate docker tag to v37.50.1 ([2e3ef0f](https://github.com/tubenhirn/dagger-ci-modules/commit/2e3ef0f6599b3292fb103d1f6911f9dc8cf9a81f))
+
 ## [5.2.17](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.2.16...v5.2.17) (11/6/2023)
 
 
