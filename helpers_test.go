@@ -1,8 +1,10 @@
 package cimodules
 
 import (
-	"github.com/stretchr/testify/assert"
+	"fmt"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 var customImage = Image{
@@ -12,7 +14,9 @@ var customImage = Image{
 }
 
 func TestCreateImageString(t *testing.T) {
-	assert.Equal(t, "renovate/renovate:37.50.1", createImageString(defaultRenovateImage, Image{}))
+	//# renovate: datasource=docker depName=renovate/renovate versioning=docker
+	renovateVersion := "37.50.1"
+	assert.Equal(t, fmt.Sprintf("renovate/renovate:%s",renovateVersion), createImageString(defaultRenovateImage, Image{}))
 	assert.Equal(t, "custom:1.2.3-suffix", createImageString(defaultRenovateImage, customImage))
 	// test a failure case
 	assert.NotEqual(t, "custom:1.2.3", createImageString(defaultRenovateImage, customImage))
