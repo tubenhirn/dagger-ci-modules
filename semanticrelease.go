@@ -33,6 +33,12 @@ var defaultSemanticreleaseGitImage = Image{
 	Version: "v4.1.2",
 }
 
+var defaultSemanticreleaseAzueImage = Image{
+	Name: "tubenhirn/semantic-release-azdo",
+	//# renovate: datasource=docker depName=tubenhirn/semantic-release-azdo versioning=docker
+	Version: "v4.1.2",
+}
+
 func semanticrelease(ctx context.Context, client dagger.Client, opts SemanticOpts) error {
 
 	sourceDir := client.Host().Directory(opts.Source)
@@ -45,6 +51,8 @@ func semanticrelease(ctx context.Context, client dagger.Client, opts SemanticOpt
 		image = createImageString(defaultSemanticreleaseGitlabImage, opts.Image)
 	case "git":
 		image = createImageString(defaultSemanticreleaseGitImage, opts.Image)
+	case "azure":
+		image = createImageString(defaultSemanticreleaseAzueImage, opts.Image)
 	default:
 		return errors.New("Platform net set.")
 	}
