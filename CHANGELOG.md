@@ -1,3 +1,10 @@
+# [5.3.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.2.19...v5.3.0) (11/10/2023)
+
+
+### Features
+
+* add azure azdo image ([55155fb](https://github.com/tubenhirn/dagger-ci-modules/commit/55155fbfdb945da4b2eee7f3d63186e93bbfc48c))
+
 ## [5.2.19](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.2.18...v5.2.19) (11/9/2023)
 
 
