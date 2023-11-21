@@ -1,3 +1,28 @@
+## [5.3.1](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.3.0...v5.3.1) (11/21/2023)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/tubenhirn/dagger-ci-modules/v5 to v5.3.0 ([7446cdd](https://github.com/tubenhirn/dagger-ci-modules/commit/7446cdde825c761262463fec001a11142252e472))
+
+
+### Continuous Integration
+
+* update go version in go.work ([d577571](https://github.com/tubenhirn/dagger-ci-modules/commit/d577571a1b821d1521c99e4798f3d3bca424d1c7))
+
+
+### Miscellaneous Chores
+
+* bump go version to v1.21 ([8698d0a](https://github.com/tubenhirn/dagger-ci-modules/commit/8698d0a159aa7648b85948ffe72909ac9af0a8c3))
+* **deps:** update renovate/renovate docker tag to v37.53.1 ([1bb025f](https://github.com/tubenhirn/dagger-ci-modules/commit/1bb025fd62e3e6c0da7490f74484768aa26f3edd))
+* **deps:** update renovate/renovate docker tag to v37.56.1 ([548d046](https://github.com/tubenhirn/dagger-ci-modules/commit/548d046df842b27c3531d39c7971ab6758ce35c7))
+* **deps:** update renovate/renovate docker tag to v37.59.8 ([6e1a476](https://github.com/tubenhirn/dagger-ci-modules/commit/6e1a47630d4209c4ba1f75d928ab6a4d7b2f303c))
+* **deps:** update renovate/renovate docker tag to v37.63.0 ([e95546b](https://github.com/tubenhirn/dagger-ci-modules/commit/e95546b471cff22cbf0a4a92cf941a9c40374778))
+* **deps:** update tubenhirn/semantic-release-azdo docker tag to v4.1.3 ([75aa244](https://github.com/tubenhirn/dagger-ci-modules/commit/75aa24455ba5c71571332391a85a73d5868ba36b))
+* **deps:** update tubenhirn/semantic-release-git docker tag to v4.1.3 ([3d9c6bc](https://github.com/tubenhirn/dagger-ci-modules/commit/3d9c6bc3c66031299e57d83701e5b7e23afa6952))
+* **deps:** update tubenhirn/semantic-release-github docker tag to v4.1.3 ([2a65673](https://github.com/tubenhirn/dagger-ci-modules/commit/2a65673daaafb928b552b724a9219d1a6d45bf41))
+* **deps:** update tubenhirn/semantic-release-gitlab docker tag to v4.1.3 ([1382b0e](https://github.com/tubenhirn/dagger-ci-modules/commit/1382b0e6f03e611ab0e836c5c66eed985926452c))
+
 # [5.3.0](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.2.19...v5.3.0) (11/10/2023)
 
 
