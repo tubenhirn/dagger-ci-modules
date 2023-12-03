@@ -15,7 +15,7 @@ var customImage = Image{
 
 func TestCreateImageString(t *testing.T) {
 	//# renovate: datasource=docker depName=renovate/renovate versioning=docker
-	renovateVersion := "37.77.1"
+	renovateVersion := "37.81.4"
 	assert.Equal(t, fmt.Sprintf("renovate/renovate:%s",renovateVersion), createImageString(defaultRenovateImage, Image{}))
 	assert.Equal(t, "custom:1.2.3-suffix", createImageString(defaultRenovateImage, customImage))
 	// test a failure case
