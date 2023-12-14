@@ -4,7 +4,7 @@ go 1.21
 
 require (
 	dagger.io/dagger v0.9.4
-	github.com/stretchr/testify v1.8.3
+	github.com/stretchr/testify v1.8.4
 )
 
 require (
