@@ -1,3 +1,10 @@
+## [5.3.4](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.3.3...v5.3.4) (12/14/2023)
+
+
+### Bug Fixes
+
+* downgrade release verion to v4.1.3 ([5f1a7d2](https://github.com/tubenhirn/dagger-ci-modules/commit/5f1a7d261393965c010689de73975aeaa4af083d))
+
 ## [5.3.3](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.3.2...v5.3.3) (12/14/2023)
 
 
