@@ -18,25 +18,25 @@ type SemanticOpts struct {
 var defaultSemanticreleaseGithubImage = Image{
 	Name: "tubenhirn/semantic-release-github",
 	//# renovate: datasource=docker depName=tubenhirn/semantic-release-github versioning=docker
-	Version: "v4.1.4",
+	Version: "v4.1.3",
 }
 
 var defaultSemanticreleaseGitlabImage = Image{
 	Name: "tubenhirn/semantic-release-gitlab",
 	//# renovate: datasource=docker depName=tubenhirn/semantic-release-gitlab versioning=docker
-	Version: "v4.1.4",
+	Version: "v4.1.3",
 }
 
 var defaultSemanticreleaseGitImage = Image{
 	Name: "tubenhirn/semantic-release-git",
 	//# renovate: datasource=docker depName=tubenhirn/semantic-release-git versioning=docker
-	Version: "v4.1.4",
+	Version: "v4.1.3",
 }
 
 var defaultSemanticreleaseAzueImage = Image{
 	Name: "tubenhirn/semantic-release-azdo",
 	//# renovate: datasource=docker depName=tubenhirn/semantic-release-azdo versioning=docker
-	Version: "v4.1.4",
+	Version: "v4.1.3",
 }
 
 func semanticrelease(ctx context.Context, client dagger.Client, opts SemanticOpts) error {
