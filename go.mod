@@ -3,7 +3,7 @@ module github.com/tubenhirn/dagger-ci-modules/v5
 go 1.21
 
 require (
-	dagger.io/dagger v0.9.4
+	dagger.io/dagger v0.9.5
 	github.com/stretchr/testify v1.8.4
 )
 
