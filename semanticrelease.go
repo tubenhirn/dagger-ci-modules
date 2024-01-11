@@ -36,7 +36,7 @@ var defaultSemanticreleaseGitImage = Image{
 var defaultSemanticreleaseAzueImage = Image{
 	Name: "tubenhirn/semantic-release-azdo",
 	//# renovate: datasource=docker depName=tubenhirn/semantic-release-azdo versioning=docker
-	Version: "v4.1.3",
+	Version: "v4.1.4",
 }
 
 func semanticrelease(ctx context.Context, client dagger.Client, opts SemanticOpts) error {
