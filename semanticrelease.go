@@ -18,7 +18,7 @@ type SemanticOpts struct {
 var defaultSemanticreleaseGithubImage = Image{
 	Name: "tubenhirn/semantic-release-github",
 	//# renovate: datasource=docker depName=tubenhirn/semantic-release-github versioning=docker
-	Version: "v4.1.4",
+	Version: "v4.1.5",
 }
 
 var defaultSemanticreleaseGitlabImage = Image{
