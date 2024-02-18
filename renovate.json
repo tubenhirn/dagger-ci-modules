@@ -8,6 +8,12 @@
     "github>tubenhirn/renovate-config:postUpdateOptions",
     "github>tubenhirn/renovate-config:prHourlyLimit"
   ],
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["^tubenhirn/semantic-release"],
+      "groupName": "semantic-release-base-image"
+    }
+  ],
   "regexManagers": [
     {
       "fileMatch": ["(^|/).*\\.go$"],
