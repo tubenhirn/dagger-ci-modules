@@ -58,16 +58,11 @@ func main() {
 
 	dir, _ := os.Getwd()
 
-	tmpReleaseImage := cimodules.Image{
-		Name:    "tubenhirn/semantic-release-github",
-		Version: "v4.1.7",
-	}
 	options := cimodules.SemanticOpts{
 		Source:   dir,
 		Platform: *platform,
 		Env:      map[string]string{},
 		Secret:   secrets,
-		Image:    tmpReleaseImage,
 	}
 
 	if err := cimodules.Semanticrelease(ctx, *client, options); err != nil {
