@@ -10,6 +10,11 @@
   ],
   "packageRules": [
     {
+      "description": "Automerge non-major updates",
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    },
+    {
       "matchPackagePatterns": ["^tubenhirn/semantic-release"],
       "groupName": "semantic-release-base-image"
     }
