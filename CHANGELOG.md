@@ -1,3 +1,11 @@
+## [5.3.7](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.3.6...v5.3.7) (3/12/2024)
+
+
+### Bug Fixes
+
+* downgrade semantic-release version due to replace-plugin problems ([3b85861](https://github.com/tubenhirn/dagger-ci-modules/commit/3b85861cb2e32c478c52e43efcbc8717aa3678df))
+* revert temp image ([35173ec](https://github.com/tubenhirn/dagger-ci-modules/commit/35173ec4b7d4273d314457b3e2c70f039b6588b3))
+
 ## [5.3.6](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.3.5...v5.3.6) (3/12/2024)
 
 
