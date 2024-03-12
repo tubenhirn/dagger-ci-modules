@@ -3,8 +3,8 @@ module github.com/tubenhirn/dagger-ci-modules/v5
 go 1.21
 
 require (
-	dagger.io/dagger v0.10.0
-	github.com/stretchr/testify v1.8.4
+	dagger.io/dagger v0.10.1
+	github.com/stretchr/testify v1.9.0
 )
 
 require (
@@ -17,6 +17,6 @@ require (
 	github.com/vektah/gqlparser/v2 v2.5.6 // indirect
 	golang.org/x/exp v0.0.0-20231110203233-9a3e6036ecaa // indirect
 	golang.org/x/sync v0.6.0 // indirect
-	golang.org/x/sys v0.14.0 // indirect
+	golang.org/x/sys v0.17.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
