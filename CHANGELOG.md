@@ -1,3 +1,20 @@
+## [5.3.8](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.3.7...v5.3.8) (3/24/2024)
+
+
+### Bug Fixes
+
+* **deps:** update module dagger.io/dagger to v0.10.2 (#264) ([1e9a8fe](https://github.com/tubenhirn/dagger-ci-modules/commit/1e9a8fe7c3a5416336a59f8112fa0a1240c44324)), closes [#264](https://github.com/tubenhirn/dagger-ci-modules/issues/264)
+* **deps:** update module github.com/tubenhirn/dagger-ci-modules/v5 to v5.3.7 (#265) ([5f02e18](https://github.com/tubenhirn/dagger-ci-modules/commit/5f02e184683c5793bd1183f03fc550ea194f5a76)), closes [#265](https://github.com/tubenhirn/dagger-ci-modules/issues/265)
+
+
+### Miscellaneous Chores
+
+* **deps:** update renovate/renovate docker tag to v37.262.1 (#266) ([285caa6](https://github.com/tubenhirn/dagger-ci-modules/commit/285caa623b69ec1201cd304556ff14135d2a413e)), closes [#266](https://github.com/tubenhirn/dagger-ci-modules/issues/266)
+* **deps:** update renovate/renovate docker tag to v37.269.2 (#268) ([b280add](https://github.com/tubenhirn/dagger-ci-modules/commit/b280addfc0bcd610304b6a513d6feae328454635)), closes [#268](https://github.com/tubenhirn/dagger-ci-modules/issues/268)
+* **deps:** update semantic-release-base-image to v4.1.10 (#269) ([f78d9c5](https://github.com/tubenhirn/dagger-ci-modules/commit/f78d9c55468ded237fade93310a38af40e70c69e)), closes [#269](https://github.com/tubenhirn/dagger-ci-modules/issues/269)
+* **deps:** update semantic-release-base-image to v4.1.8 (#263) ([1826c98](https://github.com/tubenhirn/dagger-ci-modules/commit/1826c98fc443355bfe1eab58b8f78ec6ccb36a43)), closes [#263](https://github.com/tubenhirn/dagger-ci-modules/issues/263)
+* **deps:** update semantic-release-base-image to v4.1.9 (#267) ([7d80b2f](https://github.com/tubenhirn/dagger-ci-modules/commit/7d80b2fdb26f95634d46ffa5325c3c459d9ddfc3)), closes [#267](https://github.com/tubenhirn/dagger-ci-modules/issues/267)
+
 ## [5.3.7](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.3.6...v5.3.7) (3/12/2024)
 
 
