@@ -6,7 +6,7 @@ toolchain go1.21.4
 
 require (
 	dagger.io/dagger v0.10.2
-	github.com/tubenhirn/dagger-ci-modules/v5 v5.3.7
+	github.com/tubenhirn/dagger-ci-modules/v5 v5.3.8
 )
 
 require (
