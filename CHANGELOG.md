@@ -1,3 +1,16 @@
+## [5.3.12](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.3.11...v5.3.12) (6/11/2024)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/tubenhirn/dagger-ci-modules/v5 to v5.3.11 (#286) ([64ee75f](https://github.com/tubenhirn/dagger-ci-modules/commit/64ee75ff4775a893e0d9c7cec2ec1dbb92883035)), closes [#286](https://github.com/tubenhirn/dagger-ci-modules/issues/286)
+
+
+### Miscellaneous Chores
+
+* **deps:** update renovate/renovate docker tag to v37.402.0 (#287) ([0ed61a5](https://github.com/tubenhirn/dagger-ci-modules/commit/0ed61a56132628c6091667bdac468dbb0beff63c)), closes [#287](https://github.com/tubenhirn/dagger-ci-modules/issues/287)
+* **deps:** update semantic-release-base-image to v4.1.12 ([3b6468e](https://github.com/tubenhirn/dagger-ci-modules/commit/3b6468eb19cd4a0a55d5eef052036fce908d9d5d))
+
 ## [5.3.11](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.3.10...v5.3.11) (6/6/2024)
 
 
