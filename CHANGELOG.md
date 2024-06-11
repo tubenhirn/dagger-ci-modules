@@ -1,3 +1,10 @@
+## [5.3.13](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.3.12...v5.3.13) (6/11/2024)
+
+
+### Miscellaneous Chores
+
+* downgrade semantic-release ([3f91641](https://github.com/tubenhirn/dagger-ci-modules/commit/3f91641b27a51a703a1478353b46b1352c0ff9a0))
+
 ## [5.3.12](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.3.11...v5.3.12) (6/11/2024)
 
 
