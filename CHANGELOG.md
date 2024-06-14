@@ -1,3 +1,10 @@
+## [5.3.14](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.3.13...v5.3.14) (6/14/2024)
+
+
+### Bug Fixes
+
+* return err ([a823f8c](https://github.com/tubenhirn/dagger-ci-modules/commit/a823f8c87cdfb40e96e8567a9b7568f09ec2518b))
+
 ## [5.3.13](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.3.12...v5.3.13) (6/11/2024)
 
 
