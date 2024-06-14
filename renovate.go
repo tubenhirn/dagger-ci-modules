@@ -60,7 +60,7 @@ func renovate(ctx context.Context, client dagger.Client, opts RenovateOpts) erro
 
 	_, err := renovate.WithExec([]string{}, dagger.ContainerWithExecOpts{}).Stdout(ctx)
 	if err != nil {
-		panic(err)
+		return err
 	}
 
 	return nil
