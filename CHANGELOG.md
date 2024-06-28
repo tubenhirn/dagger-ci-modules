@@ -1,3 +1,22 @@
+## [5.3.15](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.3.14...v5.3.15) (6/28/2024)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/tubenhirn/dagger-ci-modules/v5 to v5.3.14 ([549fb13](https://github.com/tubenhirn/dagger-ci-modules/commit/549fb131acbbfff918e11115e1d3ac5c0f4122b1))
+
+
+### Miscellaneous Chores
+
+* **deps:** update renovate/renovate docker tag to v37.408.0 (#290) ([3ea792d](https://github.com/tubenhirn/dagger-ci-modules/commit/3ea792d6fc84da92eff8b64ae3f6f0ed451b23c9)), closes [#290](https://github.com/tubenhirn/dagger-ci-modules/issues/290)
+* **deps:** update renovate/renovate docker tag to v37.408.2 (#291) ([00cafc0](https://github.com/tubenhirn/dagger-ci-modules/commit/00cafc05f212c87221f107f2c91c320b13ad2f11)), closes [#291](https://github.com/tubenhirn/dagger-ci-modules/issues/291)
+
+
+### Tests
+
+* add test for flags ([3418b40](https://github.com/tubenhirn/dagger-ci-modules/commit/3418b40e2670f65e3f6a39707037599f6832d6ed))
+* update flag test ([fed5baa](https://github.com/tubenhirn/dagger-ci-modules/commit/fed5baa7d2d64fc8ac839fcf5e18b1c90597600e))
+
 ## [5.3.14](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.3.13...v5.3.14) (6/14/2024)
 
 
