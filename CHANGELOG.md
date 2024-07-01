@@ -1,3 +1,13 @@
+## [5.3.16](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.3.15...v5.3.16) (2024-07-01)
+
+
+### Bug Fixes
+
+* **deps:** update module dagger.io/dagger to v0.11.9 ([#292](https://github.com/tubenhirn/dagger-ci-modules/issues/292)) ([e5a598b](https://github.com/tubenhirn/dagger-ci-modules/commit/e5a598bf9d6365027d0a2f0eee211fbdc60463db))
+* **deps:** update module github.com/tubenhirn/dagger-ci-modules/v5 to v5.3.15 ([6829732](https://github.com/tubenhirn/dagger-ci-modules/commit/682973222765d902a714e37d29781149887a8b99))
+* update go.work ([7eb7bcb](https://github.com/tubenhirn/dagger-ci-modules/commit/7eb7bcb2b3b8813c89de142de149b07f8dcfc73c))
+* update semantic-release image ([cde835e](https://github.com/tubenhirn/dagger-ci-modules/commit/cde835e7d40817f8ac41c044c3139dae4d8c65d4))
+
 ## [5.3.15](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.3.14...v5.3.15) (6/28/2024)
 
 
