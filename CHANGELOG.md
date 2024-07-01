@@ -1,3 +1,10 @@
+## [5.3.17](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.3.16...v5.3.17) (2024-07-01)
+
+
+### Bug Fixes
+
+* bump semantic-release to v4.1.15 ([6aa4f65](https://github.com/tubenhirn/dagger-ci-modules/commit/6aa4f6505531d688d5124f057c21e8b050ba64e8))
+
 ## [5.3.16](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.3.15...v5.3.16) (2024-07-01)
 
 
