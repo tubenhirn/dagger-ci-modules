@@ -2,7 +2,7 @@ module github.com/tubenhirn/dagger-ci-modules/v5
 
 go 1.22
 
-toolchain go1.22.4
+toolchain go1.22.5
 
 require (
 	dagger.io/dagger v0.11.9
