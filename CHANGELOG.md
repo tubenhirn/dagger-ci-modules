@@ -1,3 +1,10 @@
+## [5.3.20](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.3.19...v5.3.20) (2024-07-15)
+
+
+### Bug Fixes
+
+* add empty command ([96969de](https://github.com/tubenhirn/dagger-ci-modules/commit/96969de193c6170889de818d94ad3306c30cb59e))
+
 ## [5.3.19](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.3.18...v5.3.19) (2024-07-15)
 
 
