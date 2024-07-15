@@ -1,3 +1,10 @@
+## [5.3.19](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.3.18...v5.3.19) (2024-07-15)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/tubenhirn/dagger-ci-modules/v5 to v5.3.18 ([#299](https://github.com/tubenhirn/dagger-ci-modules/issues/299)) ([8bb0d5b](https://github.com/tubenhirn/dagger-ci-modules/commit/8bb0d5b2cb535336b289d153f7084497daf33272))
+
 ## [5.3.18](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.3.17...v5.3.18) (2024-07-04)
 
 
