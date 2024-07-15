@@ -41,6 +41,7 @@ var defaultSemanticreleaseAzueImage = Image{
 
 func semanticrelease(ctx context.Context, client dagger.Client, opts SemanticOpts) error {
 
+	command := []string{}
 	sourceDir := client.Host().Directory(opts.Source)
 
 	var image string
@@ -72,7 +73,7 @@ func semanticrelease(ctx context.Context, client dagger.Client, opts SemanticOpt
 		semanticrelease = semanticrelease.WithEnvVariable(key, val)
 	}
 
-	_, err := semanticrelease.WithExec(nil).Stdout(ctx)
+	_, err := semanticrelease.WithExec(command).Stdout(ctx)
 	if err != nil {
 		return err
 	}
