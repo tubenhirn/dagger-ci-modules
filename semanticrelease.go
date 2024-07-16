@@ -74,7 +74,7 @@ func semanticrelease(ctx context.Context, client dagger.Client, opts SemanticOpt
 	}
 
 	// set entrypoint
-	semanticrelease = semanticrelease.WithEntrypoint([]string{})
+	semanticrelease = semanticrelease.WithEntrypoint([]string{"entrypoint.sh"})
 
 	_, err := semanticrelease.WithExec(commands).Stdout(ctx)
 	if err != nil {
