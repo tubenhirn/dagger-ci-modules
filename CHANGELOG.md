@@ -1,3 +1,12 @@
+## [5.3.21](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.3.20...v5.3.21) (2024-07-16)
+
+
+### Bug Fixes
+
+* add entrypoint ([580749e](https://github.com/tubenhirn/dagger-ci-modules/commit/580749eba1af19197b25a5690f4aff5a0aac5541))
+* updat semanticrelease ([6cc405d](https://github.com/tubenhirn/dagger-ci-modules/commit/6cc405d895f6826f885ee948041a17b5075270de))
+* update semanticrelease ([66406d7](https://github.com/tubenhirn/dagger-ci-modules/commit/66406d7a2b3edc42eda5a6cd742b0c8e301106a3))
+
 ## [5.3.20](https://github.com/tubenhirn/dagger-ci-modules/compare/v5.3.19...v5.3.20) (2024-07-15)
 
 
