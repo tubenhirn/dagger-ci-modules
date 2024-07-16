@@ -41,7 +41,7 @@ var defaultSemanticreleaseAzueImage = Image{
 
 func semanticrelease(ctx context.Context, client dagger.Client, opts SemanticOpts) error {
 
-	command := []string{}
+	commands := []string{}
 	sourceDir := client.Host().Directory(opts.Source)
 
 	var image string
@@ -58,9 +58,9 @@ func semanticrelease(ctx context.Context, client dagger.Client, opts SemanticOpt
 		return errors.New("Platform net set.")
 	}
 
-	semanticreleaseImage := client.Container().From(image)
+	semanticrelease := client.Container().From(image)
 
-	semanticrelease := semanticreleaseImage.WithMountedDirectory("/src", sourceDir)
+	semanticrelease = semanticrelease.WithMountedDirectory("/src", sourceDir)
 	semanticrelease = semanticrelease.WithWorkdir("/src")
 
 	// write env secrets - access-tokens etc.
@@ -73,7 +73,10 @@ func semanticrelease(ctx context.Context, client dagger.Client, opts SemanticOpt
 		semanticrelease = semanticrelease.WithEnvVariable(key, val)
 	}
 
-	_, err := semanticrelease.WithExec(command).Stdout(ctx)
+	// set entrypoint
+	semanticrelease = semanticrelease.WithEntrypoint([]string{"semantic-release"})
+
+	_, err := semanticrelease.WithExec(commands).Stdout(ctx)
 	if err != nil {
 		return err
 	}
